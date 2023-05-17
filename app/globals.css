@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DEFAULT STYLING */
+:root {
+  --color-selection: rgba(207, 92, 252, 0.25);
+
+  /* Font rendering, smoothing, adjusting */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::selection {
+  background-color: var(--color-selection);
+  /* color: #fff; */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* THEME */
+/* html {
+  color-scheme: dark light;
+} */
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'SF Pro',
+    'San Francisco Pro', 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* text-align: center; */
+
+  /* overflow: hidden; */
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  /* outline: none; */
+}
+
+/* active element outline */
+/* :focus {
+  outline: 2px solid var(--color-primary);
+} */
+
+ul,
+li {
+  list-style: none;
+}
+
+/* DARK MODE */
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
