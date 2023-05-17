@@ -6,4 +6,4 @@ _NOTE: The website is still under development._
 
 ## Visit the website
 
-[https://emanuelefavero.com/](https://emanuelefavero.com/)
+[emanuelefavero.com](https://emanuelefavero.com)
