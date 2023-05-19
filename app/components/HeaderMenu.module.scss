@@ -13,11 +13,13 @@
   transition: transform 300ms ease-in-out;
 }
 
+// Hover
 .linkHoverLineAnimation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
+// Active
 .linkHoverLineAnimation:active::before {
   background-color: #475569; // slate 600
 }
