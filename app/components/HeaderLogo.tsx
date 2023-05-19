@@ -10,7 +10,7 @@ export default function HeaderLogo() {
   return (
     <button
       type='button'
-      className={`${styles.HeaderLogo} flex cursor-pointer items-center justify-center rounded-lg px-2 py-1 text-slate-900 focus:text-indigo-600 focus:outline-none`}
+      className={`${styles.HeaderLogo} flex cursor-pointer items-center justify-center rounded-lg px-2 py-1 text-xl font-bold text-slate-900 focus:text-indigo-600 focus:outline-none`}
       onClick={() => router.push('/')}
     >
       <Image
@@ -20,7 +20,7 @@ export default function HeaderLogo() {
         width={44}
         height={44}
       />
-      <span className='text-xl font-semibold'>Emanuele Favero</span>
+      <span>Emanuele Favero</span>
     </button>
   )
 }
