@@ -4,6 +4,7 @@
 
 /* DEFAULT STYLING */
 :root {
+  --color-primary: #4f46e5;
   --color-selection: rgba(207, 92, 252, 0.25);
 
   /* Font rendering, smoothing, adjusting */
@@ -17,6 +18,10 @@
   background-color: var(--color-selection);
   /* color: #fff; */
 }
+
+/* :focus {
+  outline: 2px solid var(--color-primary);
+} */
 
 *,
 *::before,
