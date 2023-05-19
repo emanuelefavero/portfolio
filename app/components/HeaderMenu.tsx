@@ -7,7 +7,8 @@ export default function HeaderMenu() {
       <li className='mr-6'>
         <Link
           href='#portfolio'
-          className={`${styles.linkHoverLineAnimation} relative active:text-slate-600`}
+          // TIP: We added rounded-sm to style the accessibility focus outline
+          className={`${styles.linkHoverLineAnimation} relative rounded-sm active:text-slate-600`}
         >
           Portfolio
         </Link>
@@ -15,7 +16,7 @@ export default function HeaderMenu() {
       <li className='mr-6'>
         <Link
           href='#skills'
-          className={`${styles.linkHoverLineAnimation} relative active:text-slate-600`}
+          className={`${styles.linkHoverLineAnimation} relative rounded-sm active:text-slate-600`}
         >
           Skills
         </Link>
@@ -24,7 +25,7 @@ export default function HeaderMenu() {
         <Link
           href='/emanuele-favero-CV.pdf'
           target='_blank'
-          className={`${styles.linkHoverLineAnimation} relative active:text-slate-600`}
+          className={`${styles.linkHoverLineAnimation} relative rounded-sm active:text-slate-600`}
         >
           Download CV
         </Link>

@@ -19,11 +19,6 @@
   /* color: #fff; */
 }
 
-/* :focus {
-  outline: 2px solid var(--color-primary);
-  border-radius: 4px;
-} */
-
 *,
 *::before,
 *::after {
@@ -31,6 +26,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: inherit;
+}
+
+/* TIP: :focus-visible instead of :focus shows the outline only when pressing TAB on the keyboard (it keeps the default behavior) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
 }
 
 /* THEME */
