@@ -24,8 +24,11 @@ export default function RootLayout({
           <Header />
         </header>
 
-        <ScrollDownButton />
-        <main>{children}</main>
+        <main>
+          <ScrollDownButton />
+
+          {children}
+        </main>
       </body>
     </html>
   )
