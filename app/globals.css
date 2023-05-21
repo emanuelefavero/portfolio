@@ -50,6 +50,7 @@ body {
   /* text-align: center; */
 
   /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 img,
@@ -74,14 +75,29 @@ a:active {
   /* outline: none; */
 }
 
-/* active element outline */
-/* :focus {
-  outline: 2px solid var(--color-primary);
-} */
-
 ul,
 li {
   list-style: none;
+}
+
+section {
+  min-height: calc(100vh);
+}
+
+section.dark {
+  /* background-color: #0a172a; */
+  background-color: rgb(16, 19, 67);
+  /* background-color: #0f172a; */
+  /* background-color: hsl(238, 47%, 20%); */
+
+  box-shadow: 0 0 5px 5px rgba(16, 19, 67, 0.3);
+
+  color: #eef2ff;
+  transform: skew(0deg, -6deg);
+}
+
+section.dark > * {
+  transform: skew(0deg, 6deg);
 }
 
 /* DARK MODE */

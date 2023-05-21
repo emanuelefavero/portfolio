@@ -8,6 +8,7 @@ interface Props {
 export default function HeroImage({ numberOfRepositories }: Props) {
   return (
     <>
+      {/* Hero Blob */}
       <Image
         className='absolute -bottom-20 left-1/2 -translate-x-1/2 scale-150 transform select-none opacity-25'
         src='/images/hero-blob.svg'
@@ -15,7 +16,7 @@ export default function HeroImage({ numberOfRepositories }: Props) {
         width={1000}
         height={1000}
       />
-
+      {/* Hero Image */}
       <Image
         className='relative -bottom-4 -left-2 select-none'
         src='/images/hero-image.png'
@@ -23,7 +24,6 @@ export default function HeroImage({ numberOfRepositories }: Props) {
         width={1000}
         height={1000}
       />
-
       <HeroInfo numberOfRepositories={numberOfRepositories} />
     </>
   )

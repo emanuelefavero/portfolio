@@ -1,4 +1,5 @@
 import HeroSection from './components/HeroSection'
+import ProjectsSection from './components/ProjectsSection'
 
 async function getNumberOfRepositories() {
   const res = await fetch('https://api.github.com/users/emanuelefavero')
@@ -19,6 +20,7 @@ export default async function Home() {
   return (
     <>
       <HeroSection numberOfRepositories={numberOfRepositories} />
+      <ProjectsSection />
     </>
   )
 }

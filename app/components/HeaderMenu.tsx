@@ -6,11 +6,11 @@ export default function HeaderMenu() {
     <ul className='mr-4 flex select-none items-center justify-center text-xl font-semibold text-slate-700'>
       <li className='mr-6'>
         <Link
-          href='#portfolio'
+          href='#projects'
           // TIP: We added rounded-sm to style the accessibility focus outline
           className={`${styles.linkHoverLineAnimation} relative rounded-sm active:text-slate-600`}
         >
-          Portfolio
+          Projects
         </Link>
       </li>
       <li className='mr-6'>
