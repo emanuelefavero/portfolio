@@ -5,7 +5,11 @@ import HeroButton from './HeroButton'
 import HeroText from './HeroText'
 import HeroImage from './HeroImage'
 
-export default function HeroSection() {
+interface Props {
+  numberOfRepositories: number
+}
+
+export default function HeroSection({ numberOfRepositories }: Props) {
   return (
     <>
       <section
@@ -17,7 +21,7 @@ export default function HeroSection() {
           <HeroSocialLinks />
         </div>
         <div className='relative w-1/2'>
-          <HeroImage />
+          <HeroImage numberOfRepositories={numberOfRepositories} />
         </div>
       </section>
     </>

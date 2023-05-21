@@ -1,17 +1,24 @@
 import HeroSection from './components/HeroSection'
 
-async function getRepositoriesCount() {
+async function getNumberOfRepositories() {
   const res = await fetch('https://api.github.com/users/emanuelefavero')
   const data = await res.json()
-  return data.public_repos
+
+  if (!data.public_repos) {
+    // Fallback to a default value (number of repositories I have on GitHub at the time of writing)
+    // TODO: Update this value over time
+    return 170
+  }
+
+  return Number(data.public_repos)
 }
 
 export default async function Home() {
-  const repositoriesCount = await getRepositoriesCount()
+  const numberOfRepositories: number = await getNumberOfRepositories()
+
   return (
     <>
-      <span>{repositoriesCount}</span>
-      <HeroSection />
+      <HeroSection numberOfRepositories={numberOfRepositories} />
     </>
   )
 }

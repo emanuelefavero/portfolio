@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import HeroInfo from './HeroInfo'
 
-export default function HeroImage() {
+interface Props {
+  numberOfRepositories: number
+}
+
+export default function HeroImage({ numberOfRepositories }: Props) {
   return (
     <>
       <Image
@@ -20,7 +24,7 @@ export default function HeroImage() {
         height={1000}
       />
 
-      <HeroInfo />
+      <HeroInfo numberOfRepositories={numberOfRepositories} />
     </>
   )
 }
