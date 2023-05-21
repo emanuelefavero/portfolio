@@ -1,0 +1,23 @@
+.ScrollDownButton {
+  text-shadow: 1px 1px 2px hsla(229, 84%, 5%, 0.8);
+  transition: all 0.25s ease-in-out;
+
+  animation: bounce 1.5s ease-in-out infinite;
+
+  &:hover {
+    animation-play-state: paused;
+    color: #818cf8;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

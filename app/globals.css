@@ -90,7 +90,7 @@ section.dark {
   /* background-color: #0f172a; */
   /* background-color: hsl(238, 47%, 20%); */
 
-  box-shadow: 0 0 5px 5px rgba(16, 19, 67, 0.3);
+  box-shadow: 0 0 3px 5px rgba(16, 19, 67, 0.25);
 
   color: #eef2ff;
   transform: skew(0deg, -6deg);
