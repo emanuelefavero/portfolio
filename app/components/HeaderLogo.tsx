@@ -14,7 +14,7 @@ export default function HeaderLogo() {
       onClick={() => router.push('/')}
     >
       <Image
-        className='mr-4 rounded-full border-2 border-slate-100 shadow-sm shadow-slate-400'
+        className='mr-4 select-none rounded-full border-2 border-slate-100 shadow-sm shadow-slate-400'
         src='/images/logo-400x400.jpeg'
         alt='logo'
         width={44}

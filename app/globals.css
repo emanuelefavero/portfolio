@@ -5,7 +5,7 @@
 /* DEFAULT STYLING */
 :root {
   --color-primary: #4f46e5;
-  --color-selection: rgba(207, 92, 252, 0.25);
+  --color-selection: rgba(77, 69, 230, 0.2);
 
   /* Font rendering, smoothing, adjusting */
   text-rendering: optimizeLegibility;

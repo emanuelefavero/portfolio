@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function HeaderMenu() {
   return (
-    <ul className='mr-4 flex items-center justify-center text-xl font-semibold text-slate-700'>
+    <ul className='mr-4 flex select-none items-center justify-center text-xl font-semibold text-slate-700'>
       <li className='mr-6'>
         <Link
           href='#portfolio'
