@@ -1,0 +1,87 @@
+.HeroButton {
+  position: relative;
+  transition: all 0.15s ease-in-out;
+
+  // TIP: Flex is needed for the effect to work
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateZ(0);
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+
+  // CONIC GRADIENT ANIMATION
+  &::before {
+    // TIP: WIDTH AND HEIGHT SHOULD CHANGE WHEN YOU PUT DIFFERENT TEXT IN THE BUTTON
+    // ? Turn off background-color in &::after during testing
+
+    // Size
+    width: 350%;
+    height: 350%;
+
+    // Animation Speed
+    animation: 7.5s rotate linear infinite;
+
+    // Gradient Color
+    background: conic-gradient(
+      #a5b4fc,
+      #818cf8,
+      #818cf8,
+      #6366f1,
+      #4338ca,
+      #4338ca,
+      #a5b4fc
+    );
+  }
+
+  // INNER SPACE
+  &::after {
+    // Border Size
+    padding: 1px;
+
+    // Border Radius
+    border-radius: 999px;
+
+    // Background Color
+    background: linear-gradient(
+      to bottom right,
+      #0f172a,
+      rgba(15, 23, 42, 0.386)
+    );
+
+    inset: 0;
+    background-clip: content-box;
+  }
+
+  // HOVER
+  &:hover::after {
+    transition: 1s ease-in-out;
+    background: linear-gradient(to bottom right, #4338ca, rgba(30, 27, 75, 0));
+  }
+
+  &:hover {
+    letter-spacing: 0.05rem;
+  }
+
+  // ACTIVE (CLICKED)
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+// ANIMATION
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
