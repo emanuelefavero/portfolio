@@ -20,6 +20,18 @@
       opacity: 1;
     }
   }
+
+  &:active {
+    background-color: rgba(18, 19, 60, 0.4);
+
+    .projectName {
+      color: #818cf8;
+    }
+
+    .arrow {
+      color: #818cf8;
+    }
+  }
 }
 
 .repositoryURL {
@@ -44,6 +56,18 @@
 
     .exploreCode {
       color: #fff;
+    }
+  }
+
+  &:active {
+    background-color: rgba(18, 19, 60, 0.4);
+
+    .githubIcon {
+      color: #818cf8;
+    }
+
+    .exploreCode {
+      color: #818cf8;
     }
   }
 }
