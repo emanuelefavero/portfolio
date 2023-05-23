@@ -46,7 +46,7 @@
       "image": "/images/projects/consulting-firm.webp",
       "websiteURL": "https://emanuelefavero.github.io/tailwind-consulting-website",
       "repositoryURL": "https://github.com/emanuelefavero/tailwind-consulting-website",
-      "technologies": ["TailwindCSS", "CSS", "HTML"]
+      "technologies": ["TailwindCSS", "CSS", "HTML", "Static"]
     },
     {
       "name": "Debugging Duck",

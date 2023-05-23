@@ -8,6 +8,8 @@
   }
 
   &:hover {
+    background-color: rgba(18, 19, 60, 0.3);
+
     .projectName {
       color: #fff;
     }
@@ -16,6 +18,32 @@
       top: -4px;
       left: 2px;
       opacity: 1;
+    }
+  }
+}
+
+.repositoryURL {
+  padding-top: 0.875rem;
+
+  .githubIcon {
+    transition: all 0.15s ease-in;
+    opacity: 50%;
+  }
+
+  .exploreCode {
+    transition: all 0.15s ease-in;
+  }
+
+  &:hover {
+    background-color: rgba(18, 19, 60, 0.3);
+
+    .githubIcon {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .exploreCode {
+      color: #fff;
     }
   }
 }
