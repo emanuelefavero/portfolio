@@ -1,0 +1,19 @@
+.websiteURL {
+  .arrow {
+    position: relative;
+    transition: all 0.3s linear, opacity 0.15s ease-in-out;
+    opacity: 80%;
+  }
+
+  &:hover {
+    .projectName {
+      color: #fff;
+    }
+
+    .arrow {
+      top: -1px;
+      left: 1px;
+      opacity: 1;
+    }
+  }
+}
