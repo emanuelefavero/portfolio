@@ -1,8 +1,10 @@
 .websiteURL {
   .arrow {
     position: relative;
-    transition: all 0.3s linear, opacity 0.15s ease-in-out;
-    opacity: 80%;
+    transition: all 0.18s ease-in, opacity 0.14s ease-out;
+    opacity: 50%;
+    top: -2px;
+    left: 1px;
   }
 
   &:hover {
@@ -11,8 +13,8 @@
     }
 
     .arrow {
-      top: -1px;
-      left: 1px;
+      top: -4px;
+      left: 2px;
       opacity: 1;
     }
   }

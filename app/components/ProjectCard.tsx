@@ -2,6 +2,7 @@ import styles from './ProjectCard.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { BsGithub } from 'react-icons/bs'
+import { HiOutlineArrowUpRight } from 'react-icons/hi2'
 import ProjectTechnology from './ProjectTechnology'
 
 type Props = {
@@ -35,10 +36,11 @@ export default function ProjectCard({ project }: Props) {
             />
             <div className='px-4'>
               <h4 className='mb-2 text-xl font-semibold'>
-                {/* TODO: Replace emoji arrow with react icon and animate on hover */}
                 {/* .name */}
                 <span className={styles.projectName}>{project.name}</span>{' '}
-                <span className={styles.arrow}>↗</span>
+                <span className={styles.arrow}>
+                  <HiOutlineArrowUpRight className='inline' />
+                </span>
               </h4>
               <p className='text-md mb-4 min-h-[5rem] font-medium text-[#a5b0d4]'>
                 {/* .description */}
