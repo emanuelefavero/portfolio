@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: Props) {
             target='_blank'
           >
             <Image
-              className='mb-4 h-44 w-full rounded-t-3xl bg-slate-300'
+              className={`${styles.image} mb-4 h-44 w-full rounded-t-3xl bg-slate-300`}
               // .image
               src={project.image}
               alt={project.name}

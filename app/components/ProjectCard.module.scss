@@ -1,4 +1,10 @@
 .websiteURL {
+  .image {
+    transition: all 0.15s ease-in;
+    // opacity: 1;
+    opacity: 0.95;
+  }
+
   .arrow {
     position: relative;
     transition: all 0.18s ease-in, opacity 0.14s ease-out;
@@ -9,6 +15,11 @@
 
   &:hover {
     background-color: rgba(18, 19, 60, 0.3);
+
+    .image {
+      // opacity: 0.95;
+      opacity: 1;
+    }
 
     .projectName {
       color: #fff;
