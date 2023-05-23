@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: Props) {
             target='_blank'
           >
             <Image
-              className={`${styles.image} mb-4 h-44 w-full rounded-t-3xl bg-slate-300`}
+              className={`${styles.image} mb-4 h-44 w-full select-none rounded-t-3xl bg-slate-300`}
               // .image
               src={project.image}
               alt={project.name}
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: Props) {
               <h4 className='mb-2 text-xl font-semibold'>
                 {/* .name */}
                 <span className={styles.projectName}>{project.name}</span>{' '}
-                <span className={styles.arrow}>
+                <span className={`${styles.arrow} select-none`}>
                   <HiOutlineArrowUpRight className='inline' />
                 </span>
               </h4>
@@ -62,7 +62,7 @@ export default function ProjectCard({ project }: Props) {
             <div className='mb-4 w-full px-4'>
               <div className='github-link flex select-none items-center justify-end text-sm font-semibold text-indigo-100 transition-all duration-150'>
                 <BsGithub
-                  className={`${styles.githubIcon} mr-2 transform text-xl transition-all duration-200`}
+                  className={`${styles.githubIcon} mr-2 transform select-none text-xl transition-all duration-200`}
                   aria-label='github.com/emanuelefavero'
                   title='github.com/emanuelefavero'
                 />
