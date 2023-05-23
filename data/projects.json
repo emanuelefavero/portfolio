@@ -14,13 +14,7 @@
       "image": "/images/projects/compare-NBA-players.webp",
       "websiteURL": "https://compare-nba-players.vercel.app",
       "repositoryURL": "https://github.com/emanuelefavero/compare-nba-players",
-      "technologies": [
-        "Chart.js",
-        "Balldontlie API",
-        "Next.js",
-        "Typescript",
-        "React Toastify"
-      ]
+      "technologies": ["Chart.js", "Balldontlie API", "Next.js", "Typescript"]
     },
     {
       "name": "Facebook Clone",
@@ -56,7 +50,7 @@
     },
     {
       "name": "Debugging Duck",
-      "description": "A cute debugging duck that helps you coding built for both mobile and desktop",
+      "description": "A cute debugging duck that helps you with coding, built for both mobile and desktop",
       "image": "/images/projects/debugging-duck.webp",
       "websiteURL": "https://github.com/emanuelefavero/debugging-duck-mobile",
       "repositoryURL": "https://github.com/emanuelefavero/debugging-duck",

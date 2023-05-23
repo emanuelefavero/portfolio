@@ -3,33 +3,43 @@ import Image from 'next/image'
 import { BsGithub } from 'react-icons/bs'
 import ProjectTechnology from './ProjectTechnology'
 
-export default function ProjectCard() {
+type Props = {
+  project: {
+    name: string
+    description: string
+    image: string
+    websiteURL: string
+    repositoryURL: string
+    technologies: string[]
+  }
+}
+
+export default function ProjectCard({ project }: Props) {
   return (
     <>
-      <div className='w-80 rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98]'>
+      <div className='h-full w-80 flex-1 rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98]'>
         <Link
           // .websiteURL
-          href='https://pineapple-ecommerce.vercel.app'
+          href={project.websiteURL}
           target='_blank'
         >
-          {/* .image */}
           <Image
             className='mb-4 h-44 w-full rounded-t-3xl bg-slate-300'
-            src='/images/projects/pineapple-ecommerce.webp'
-            // TODO: Add .name as alt
-            alt='Pineapple Ecommerce'
+            // .image
+            src={project.image}
+            alt={project.name}
             width={320}
             height={176}
           />
           <div className='px-4'>
-            {/* .name */}
             <h4 className='mb-2 text-xl font-semibold'>
               {/* TODO: Replace emoji arrow with react icon and animate on hover */}
-              Pineapple Ecommerce ↗
+              {/* .name */}
+              {project.name} ↗
             </h4>
-            {/* .description */}
-            <p className='text-md mb-4 font-medium text-[#a5b0d4]'>
-              An iPhone ecommerce built with Next.js, Sanity and Stripe
+            <p className='text-md mb-4 min-h-[5rem] font-medium text-[#a5b0d4]'>
+              {/* .description */}
+              {project.description}
             </p>
           </div>
         </Link>
@@ -37,7 +47,7 @@ export default function ProjectCard() {
         <Link
           className='pb-4'
           // .repositoryURL
-          href='https://github.com/emanuelefavero'
+          href={project.repositoryURL}
           target='_blank'
         >
           <div className='mb-4 w-full px-4'>
@@ -50,12 +60,13 @@ export default function ProjectCard() {
               Explore Code
             </div>
           </div>
-          <div className='flex flex-wrap gap-x-3 gap-y-3 px-4 pb-4'>
+          <div className='flex flex-wrap gap-x-3 gap-y-3 px-4 pb-[1rem]'>
             {/* .technologies */}
-            <ProjectTechnology technology='Next.js' />
-            <ProjectTechnology technology='Sanity' />
-            <ProjectTechnology technology='Stripe' />
-            <ProjectTechnology technology='React' />
+            {project.technologies.map((technology, index) => (
+              <div key={index}>
+                <ProjectTechnology technology={technology} />
+              </div>
+            ))}
           </div>
         </Link>
       </div>
