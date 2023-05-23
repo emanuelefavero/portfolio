@@ -9,7 +9,7 @@ export default function ProjectCard() {
       <div className='w-80 rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98]'>
         <Link
           // .websiteURL
-          href='https://pineapple-ecommerce.vercel.app/'
+          href='https://pineapple-ecommerce.vercel.app'
           target='_blank'
         >
           {/* .image */}

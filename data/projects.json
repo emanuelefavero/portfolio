@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "name": "Pineapple Ecommerce",
+      "description": "An iPhone ecommerce built with Next.js, Sanity and Stripe",
+      "image": "/images/projects/pineapple-ecommerce.webp",
+      "websiteURL": "https://pineapple-ecommerce.vercel.app",
+      "repositoryURL": "https://github.com/emanuelefavero/pineapple-ecommerce",
+      "technologies": ["Next.js", "Sanity", "Stripe", "React", "Typescript"]
+    },
+    {
+      "name": "Compare NBA Players",
+      "description": "A Next.js app that compares NBA players 1v1 with Chart.js and NBA API",
+      "image": "/images/projects/compare-NBA-players.webp",
+      "websiteURL": "https://compare-nba-players.vercel.app",
+      "repositoryURL": "https://github.com/emanuelefavero/compare-nba-players",
+      "technologies": [
+        "Chart.js",
+        "Balldontlie API",
+        "Next.js",
+        "Typescript",
+        "React Toastify"
+      ]
+    },
+    {
+      "name": "Facebook Clone",
+      "description": "A Facebook clone built with the MERN stack. Login: john, password: 1234",
+      "image": "/images/projects/facebook-clone.webp",
+      "websiteURL": "https://facebook-mern.onrender.com",
+      "repositoryURL": "https://github.com/emanuelefavero/facebook-mern",
+      "technologies": ["MERN", "MongoDB", "Express", "React", "Node.js"]
+    },
+    {
+      "name": "MERN Blog",
+      "description": "A blog where the admin can create/edit/delete markdown posts. Login: john, password: 1234",
+      "image": "/images/projects/MERN-blog.webp",
+      "websiteURL": "https://blog-mern-client.onrender.com",
+      "repositoryURL": "https://github.com/emanuelefavero/blog-mern",
+      "technologies": ["MERN", "MongoDB", "Express", "React", "Node.js"]
+    },
+    {
+      "name": "Airbnb Clone",
+      "description": "An Airbnb-like house marketplace built with Firebase and React. Login with Google",
+      "image": "/images/projects/airbnb-clone.webp",
+      "websiteURL": "https://house-marketplace-sigma-three.vercel.app",
+      "repositoryURL": "https://github.com/emanuelefavero/house-marketplace",
+      "technologies": ["Firebase", "OAuth", "React Router", "Leaflet"]
+    },
+    {
+      "name": "Consulting Firm",
+      "description": "A nice looking static website for a consulting firm built with TailwindCSS",
+      "image": "/images/projects/consulting-firm.webp",
+      "websiteURL": "https://emanuelefavero.github.io/tailwind-consulting-website",
+      "repositoryURL": "https://github.com/emanuelefavero/tailwind-consulting-website",
+      "technologies": ["TailwindCSS", "CSS", "HTML"]
+    },
+    {
+      "name": "Debugging Duck",
+      "description": "A cute debugging duck that helps you coding built for both mobile and desktop",
+      "image": "/images/projects/debugging-duck.webp",
+      "websiteURL": "https://github.com/emanuelefavero/debugging-duck-mobile",
+      "repositoryURL": "https://github.com/emanuelefavero/debugging-duck",
+      "technologies": ["React Native", "Electron", "iOS", "Android", "Desktop"]
+    },
+    {
+      "name": "Weather API",
+      "description": "A Weather and Geolocation API fetch app built with React",
+      "image": "/images/projects/weather-API.webp",
+      "websiteURL": "https://weather-api-app-mu.vercel.app",
+      "repositoryURL": "https://github.com/emanuelefavero/weather-api-app",
+      "technologies": [
+        "Weather API",
+        "Geolocation API",
+        "Fetch",
+        "React",
+        "Vite"
+      ]
+    },
+    {
+      "name": "Budgie Snake Game",
+      "description": "A snake-like game built with HTML Canvas, Vanilla Javascript and CSS",
+      "image": "/images/projects/budgie-snake-game.webp",
+      "websiteURL": "https://emanuelefavero.github.io/canvas-game",
+      "repositoryURL": "https://github.com/emanuelefavero/canvas-game",
+      "technologies": ["Canvas", "Javascript", "CSS", "HTML"]
+    }
+  ]
+}
