@@ -6,12 +6,20 @@ export default function ProjectCard() {
   return (
     <>
       <div className='w-80 rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98]'>
-        <Link href='https://pineapple-ecommerce.vercel.app/' target='_blank'>
+        <Link
+          // .websiteURL
+          href='https://pineapple-ecommerce.vercel.app/'
+          target='_blank'
+        >
+          {/* .image */}
+          {/* TODO: Replace this placeholder with placeholder Image */}
           <div className='mb-4 h-44 w-full rounded-t-3xl bg-slate-300'></div>
           <div className='px-4'>
+            {/* .name */}
             <h4 className='mb-2 text-xl font-semibold'>
               Pineapple Ecommerce ↗
             </h4>
+            {/* .description */}
             <p className='text-md mb-4 font-medium text-[#a5b0d4]'>
               An iPhone ecommerce built with Next.js, Sanity and Stripe
             </p>
@@ -20,6 +28,7 @@ export default function ProjectCard() {
 
         <Link
           className='pb-4'
+          // .repositoryURL
           href='https://github.com/emanuelefavero'
           target='_blank'
         >
@@ -34,6 +43,7 @@ export default function ProjectCard() {
             </div>
           </div>
           <div className='flex flex-wrap gap-x-3 gap-y-3 px-4 pb-4'>
+            {/* .technologies */}
             <ProjectTechnology technology='Next.js' />
             <ProjectTechnology technology='Sanity' />
             <ProjectTechnology technology='Stripe' />

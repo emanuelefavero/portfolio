@@ -1,5 +1,7 @@
 import ProjectCard from './ProjectCard'
 
+// TODO: Add dynamic data from json file
+
 export default function Projects() {
   return (
     <>
