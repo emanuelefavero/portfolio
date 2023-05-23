@@ -19,7 +19,7 @@ function hackerTextEffect() {
     textElement.textContent = newText
 
     // NOTE: Change the interval duration to adjust the animation speed
-  }, 100)
+  }, 50)
 
   // Restore the original text after 1 second
   setTimeout(() => {
