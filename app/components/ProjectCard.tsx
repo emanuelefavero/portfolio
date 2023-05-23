@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { BsGithub } from 'react-icons/bs'
 import ProjectTechnology from './ProjectTechnology'
 
@@ -12,11 +13,18 @@ export default function ProjectCard() {
           target='_blank'
         >
           {/* .image */}
-          {/* TODO: Replace this placeholder with placeholder Image */}
-          <div className='mb-4 h-44 w-full rounded-t-3xl bg-slate-300'></div>
+          <Image
+            className='mb-4 h-44 w-full rounded-t-3xl bg-slate-300'
+            src='/images/projects/pineapple-ecommerce.webp'
+            // TODO: Add .name as alt
+            alt='Pineapple Ecommerce'
+            width={320}
+            height={176}
+          />
           <div className='px-4'>
             {/* .name */}
             <h4 className='mb-2 text-xl font-semibold'>
+              {/* TODO: Replace emoji arrow with react icon and animate on hover */}
               Pineapple Ecommerce ↗
             </h4>
             {/* .description */}
