@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import skillsData from '@/data/skills.json'
 
 export default function ProjectsSection() {
   return (
@@ -37,7 +38,7 @@ export default function ProjectsSection() {
 
         {/* Skills List */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
-          {/* Skill Area */}
+          {/* Skill Area - Frontend */}
           <li className='min-w-[118px]'>
             <Image
               className='mb-4'
@@ -48,17 +49,18 @@ export default function ProjectsSection() {
             />
             <h4 className='text-md mb-2 font-bold text-slate-900'>Frontend</h4>
             <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              <li>Typescript</li>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>SASS/CSS</li>
-              <li>Tailwind</li>
+              {/* frontend skills data */}
+              {/* ? Render first 6 skills from data/skills.json */}
+              {skillsData.frontend.slice(0, 6).map((skill, index) => (
+                <>
+                  <li key={index}>{skill}</li>
+                </>
+              ))}
             </ul>
             <span className='text-2xl font-semibold text-indigo-500'>+</span>
           </li>
 
-          {/* Skill Area */}
+          {/* Skill Area - Backend */}
           <li className='min-w-[118px]'>
             <Image
               className='mb-4'
@@ -69,17 +71,17 @@ export default function ProjectsSection() {
             />
             <h4 className='text-md mb-2 font-bold text-slate-900'>Backend</h4>
             <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>Django</li>
-              <li>REST</li>
+              {/* backend skills data */}
+              {skillsData.backend.slice(0, 6).map((skill, index) => (
+                <>
+                  <li key={index}>{skill}</li>
+                </>
+              ))}
             </ul>
             <span className='text-2xl font-semibold text-indigo-500'>+</span>
           </li>
 
-          {/* Skill Area */}
+          {/* Skill Area - Database */}
           <li className='min-w-[118px]'>
             <Image
               className='mb-4'
@@ -90,17 +92,17 @@ export default function ProjectsSection() {
             />
             <h4 className='text-md mb-2 font-bold text-slate-900'>Database</h4>
             <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-              <li>Firebase</li>
-              <li>SQL</li>
-              <li>Prisma</li>
-              <li>Supabase</li>
+              {/* database skills data */}
+              {skillsData.database.slice(0, 6).map((skill, index) => (
+                <>
+                  <li key={index}>{skill}</li>
+                </>
+              ))}
             </ul>
             <span className='text-2xl font-semibold text-indigo-500'>+</span>
           </li>
 
-          {/* Skill Area */}
+          {/* Skill Area - Tools */}
           <li className='min-w-[118px]'>
             <Image
               className='mb-4'
@@ -111,12 +113,12 @@ export default function ProjectsSection() {
             />
             <h4 className='text-md mb-2 font-bold text-slate-900'>Tools</h4>
             <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              <li>Git</li>
-              <li>Jest</li>
-              <li>Testing Library</li>
-              <li>ESLint</li>
-              <li>Figma</li>
-              <li>Kanban</li>
+              {/* tools skills data */}
+              {skillsData.tools.slice(0, 6).map((skill, index) => (
+                <>
+                  <li key={index}>{skill}</li>
+                </>
+              ))}
             </ul>
             <span className='text-2xl font-semibold text-indigo-500'>+</span>
           </li>
