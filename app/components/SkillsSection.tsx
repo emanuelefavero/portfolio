@@ -5,11 +5,12 @@ import SkillsArea from './SkillsArea'
 export default function ProjectsSection() {
   return (
     <>
+      {/* SKILLS SECTION */}
       <section
         id='projects'
         className='relative -top-16 flex w-full flex-col items-start justify-start px-40 pb-44 pt-32 text-slate-500'
       >
-        {/* Text */}
+        {/* TEXT */}
         <h3 className='mb-8 text-2xl font-bold text-indigo-600'>Skills</h3>
         <h2 className='mb-10 text-4xl font-extrabold text-slate-900'>
           Frontend development is my area of expertise, but ...
@@ -28,12 +29,12 @@ export default function ProjectsSection() {
           <span className='text-indigo-600'>JAMSTACK</span> applications
         </p>
 
-        {/* Skills Code - (let myStack) */}
+        {/* SKILLS CODE - (let myStack) */}
         <SkillsCode />
 
-        {/* Skills List */}
+        {/* SKILLS LIST */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
-          {/* Skill Areas */}
+          {/* SKILLS AREAS */}
           <SkillsArea skillsData={skillsData} skillsArea='frontend' />
           <SkillsArea skillsData={skillsData} skillsArea='backend' />
           <SkillsArea skillsData={skillsData} skillsArea='database' />

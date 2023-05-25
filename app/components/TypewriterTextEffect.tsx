@@ -2,8 +2,10 @@
 
 import { useEffect, useState, useRef } from 'react'
 
+// TIP: The effect will run every time the component is visible on the screen
+
 export default function TypewriterTextEffect() {
-  // * Text to be typed out
+  // * TEXT TO BE TYPED OUT
   // NOTE: If you change this, you will also need to change the text inside the span tag in the jsx below
   const text = 'let myStack = '
 
@@ -14,6 +16,7 @@ export default function TypewriterTextEffect() {
   const containerRef = useRef(null)
 
   useEffect(() => {
+    // * INTERSECTION OBSERVER - CHECK IF COMPONENT IS VISIBLE ON SCREEN
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting)
@@ -42,11 +45,12 @@ export default function TypewriterTextEffect() {
       return
     }
 
+    // * TYPEWRITER TEXT EFFECT
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setCurrentText((prevText) => prevText + text[currentIndex])
         setCurrentIndex((prevIndex) => prevIndex + 1)
-      }, 100) // Adjust the typing speed here (in milliseconds)
+      }, 100) // Adjust the typing speed here (milliseconds)
 
       return () => clearTimeout(timeout)
     }
@@ -57,12 +61,14 @@ export default function TypewriterTextEffect() {
   return (
     <>
       {showColoredText ? (
+        // COLORED TEXT AFTER TYPING EFFECT
         // NOTE: If you change the text here, you will also need to change the text in the text variable above
         <span>
           <span className='text-[#f180f3]'>let </span>myStack <span>=</span>{' '}
           <span className='text-amber-400'>[</span>
         </span>
       ) : (
+        // TYPEWRITER TEXT EFFECT
         <span ref={containerRef}>{currentText}</span>
       )}
     </>

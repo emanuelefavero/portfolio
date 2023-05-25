@@ -37,14 +37,14 @@ export default function SkillsArea({ skillsData, skillsArea }: Props) {
           {skillsAreaCapitalized}
         </h4>
         <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-          {/* skills data */}
+          {/* SKILLS */}
           {/* Render first 6 skills from skillsData */}
           {skills.slice(0, 6).map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
         </ul>
 
-        {/* More Skills Tooltip */}
+        {/* MORE SKILLS TOOLTIP */}
         {/* Pass the skills array except the first 6 elements */}
         <SkillsTooltip moreSkills={skills.slice(6)} />
       </li>
