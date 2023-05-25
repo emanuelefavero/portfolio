@@ -42,7 +42,7 @@ export default function ProjectsSection() {
           {/* Skill Area - Frontend */}
           <li className='min-w-[118px]'>
             <Image
-              className='mb-4'
+              className='mb-4 select-none'
               src='/images/skills/Frontend.png'
               alt='Frontend'
               width={36}
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
           {/* Skill Area - Backend */}
           <li className='min-w-[118px]'>
             <Image
-              className='mb-4'
+              className='mb-4 select-none'
               src='/images/skills/Backend.png'
               alt='Frontend'
               width={36}
@@ -85,7 +85,7 @@ export default function ProjectsSection() {
           {/* Skill Area - Database */}
           <li className='min-w-[118px]'>
             <Image
-              className='mb-4'
+              className='mb-4 select-none'
               src='/images/skills/Database.png'
               alt='Frontend'
               width={36}
@@ -106,7 +106,7 @@ export default function ProjectsSection() {
           {/* Skill Area - Tools */}
           <li className='min-w-[118px]'>
             <Image
-              className='mb-4'
+              className='mb-4 select-none'
               src='/images/skills/Tools.png'
               alt='Frontend'
               width={36}
