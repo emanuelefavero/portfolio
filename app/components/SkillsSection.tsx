@@ -1,4 +1,5 @@
 import skillsData from '@/data/skills.json'
+import SkillsCode from './SkillsCode'
 import SkillsArea from './SkillsArea'
 
 export default function ProjectsSection() {
@@ -27,18 +28,12 @@ export default function ProjectsSection() {
           <span className='text-indigo-600'>JAMSTACK</span> applications
         </p>
 
-        {/* Code - let myStack */}
-        <div className='mb-20 rounded-md border border-[#103453] bg-[#154269] px-2 py-[0.1rem] font-semibold text-[#d2dbe8] shadow-sm shadow-[#154269]/40'>
-          <span className='mr-3'>1</span>
-          <span>
-            <span className='text-[#f180f3]'>let </span>myStack <span>=</span>{' '}
-            <span className='text-amber-400'>{'['}</span>
-          </span>
-        </div>
+        {/* Skills Code - (let myStack) */}
+        <SkillsCode />
 
         {/* Skills List */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
-          {/* Skill Area */}
+          {/* Skill Areas */}
           <SkillsArea skillsData={skillsData} skillsArea='frontend' />
           <SkillsArea skillsData={skillsData} skillsArea='backend' />
           <SkillsArea skillsData={skillsData} skillsArea='database' />
