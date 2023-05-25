@@ -40,7 +40,7 @@ export default function ProjectsSection() {
         {/* Skills List */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
           {/* Skill Area - Frontend */}
-          <li className='min-w-[118px]'>
+          <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
             <Image
               className='mb-4 select-none'
               src='/images/skills/Frontend.png'
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
           </li>
 
           {/* Skill Area - Backend */}
-          <li className='min-w-[118px]'>
+          <li className='min-w-[150px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
             <Image
               className='mb-4 select-none'
               src='/images/skills/Backend.png'
@@ -88,7 +88,7 @@ export default function ProjectsSection() {
           </li>
 
           {/* Skill Area - Database */}
-          <li className='min-w-[118px]'>
+          <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
             <Image
               className='mb-4 select-none'
               src='/images/skills/Database.png'
@@ -111,7 +111,7 @@ export default function ProjectsSection() {
           </li>
 
           {/* Skill Area - Tools */}
-          <li className='min-w-[118px]'>
+          <li className='min-w-[150px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
             <Image
               className='mb-4 select-none'
               src='/images/skills/Tools.png'
