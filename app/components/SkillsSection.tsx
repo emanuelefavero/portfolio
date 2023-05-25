@@ -74,7 +74,7 @@ export default function ProjectsSection() {
               <li>Python</li>
               <li>Flask</li>
               <li>Django</li>
-              <li>JSON</li>
+              <li>REST</li>
             </ul>
             <span className='text-2xl font-semibold text-indigo-500'>+</span>
           </li>

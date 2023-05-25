@@ -1,0 +1,44 @@
+{
+  "frontend": [
+    "Typescript",
+    "Javascript",
+    "React",
+    "Next.js",
+    "SASS/CSS",
+    "TailwindCSS",
+    "Styled Components",
+    "CSS Modules"
+  ],
+  "backend": [
+    "Node.js",
+    "Express",
+    "Python",
+    "Flask",
+    "Django",
+    "Prisma",
+    "REST",
+    "Nodemon",
+    "NPM"
+  ],
+  "database": [
+    "MongoDB",
+    "PostgreSQL",
+    "Mongoose",
+    "Firebase",
+    "SQL",
+    "Prisma",
+    "Sanity",
+    "Strapi",
+    "Supabase"
+  ],
+  "tools": [
+    "Git",
+    "Jest",
+    "Testing Library",
+    "ESLint",
+    "Figma",
+    "Kanban",
+    "Unix Terminal",
+    "VS Code"
+  ]
+}
