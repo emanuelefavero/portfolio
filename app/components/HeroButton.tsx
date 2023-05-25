@@ -12,5 +12,3 @@ export default function HeroButton() {
     </>
   )
 }
-
-// shadow-sm shadow-slate-400
