@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SkillsArea from './SkillsArea'
 import SkillsTooltip from './SkillsTooltip'
 import skillsData from '@/data/skills.json'
 
@@ -39,99 +40,11 @@ export default function ProjectsSection() {
 
         {/* Skills List */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
-          {/* Skill Area - Frontend */}
-          <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
-            <Image
-              className='mb-4 select-none'
-              src='/images/skills/Frontend.png'
-              alt='Frontend'
-              width={36}
-              height={36}
-            />
-            <h4 className='text-md mb-2 font-bold text-slate-900'>Frontend</h4>
-            <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              {/* frontend skills data */}
-              {/* ? Render first 6 skills from data/skills.json */}
-              {skillsData.frontend.slice(0, 6).map((skill, index) => (
-                <>
-                  <li key={index}>{skill}</li>
-                </>
-              ))}
-            </ul>
-
-            {/* Frontend More Skills Tooltip */}
-            {/* Pass the skillsData.frontend array except first 6 elements */}
-            <SkillsTooltip moreSkills={skillsData.frontend.slice(6)} />
-          </li>
-
-          {/* Skill Area - Backend */}
-          <li className='min-w-[150px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
-            <Image
-              className='mb-4 select-none'
-              src='/images/skills/Backend.png'
-              alt='Frontend'
-              width={36}
-              height={36}
-            />
-            <h4 className='text-md mb-2 font-bold text-slate-900'>Backend</h4>
-            <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              {/* backend skills data */}
-              {skillsData.backend.slice(0, 6).map((skill, index) => (
-                <>
-                  <li key={index}>{skill}</li>
-                </>
-              ))}
-            </ul>
-
-            {/* Backend More Skills Tooltip */}
-            <SkillsTooltip moreSkills={skillsData.backend.slice(6)} />
-          </li>
-
-          {/* Skill Area - Database */}
-          <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
-            <Image
-              className='mb-4 select-none'
-              src='/images/skills/Database.png'
-              alt='Frontend'
-              width={36}
-              height={36}
-            />
-            <h4 className='text-md mb-2 font-bold text-slate-900'>Database</h4>
-            <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              {/* database skills data */}
-              {skillsData.database.slice(0, 6).map((skill, index) => (
-                <>
-                  <li key={index}>{skill}</li>
-                </>
-              ))}
-            </ul>
-
-            {/* Database More Skills Tooltip */}
-            <SkillsTooltip moreSkills={skillsData.database.slice(6)} />
-          </li>
-
-          {/* Skill Area - Tools */}
-          <li className='min-w-[150px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
-            <Image
-              className='mb-4 select-none'
-              src='/images/skills/Tools.png'
-              alt='Frontend'
-              width={36}
-              height={36}
-            />
-            <h4 className='text-md mb-2 font-bold text-slate-900'>Tools</h4>
-            <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
-              {/* tools skills data */}
-              {skillsData.tools.slice(0, 6).map((skill, index) => (
-                <>
-                  <li key={index}>{skill}</li>
-                </>
-              ))}
-            </ul>
-
-            {/* Tools More Skills Tooltip */}
-            <SkillsTooltip moreSkills={skillsData.tools.slice(6)} />
-          </li>
+          {/* Skill Area */}
+          <SkillsArea skillsArea='frontend' />
+          <SkillsArea skillsArea='backend' />
+          <SkillsArea skillsArea='database' />
+          <SkillsArea skillsArea='tools' />
         </ul>
       </section>
     </>

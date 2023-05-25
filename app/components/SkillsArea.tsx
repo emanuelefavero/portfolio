@@ -1,0 +1,46 @@
+import Image from 'next/image'
+import skillsData from '@/data/skills.json'
+import SkillsTooltip from './SkillsTooltip'
+
+type Props = {
+  skillsArea: keyof typeof skillsData // Type of the property names in skillsData
+}
+
+export default function SkillsArea({ skillsArea }: Props) {
+  // Access the skillsData property using the skillsArea variable
+  // ? e.g. skillsData.frontend
+  const skills = skillsData[skillsArea]
+
+  function capitalize(word: string) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+  }
+  const skillsAreaCapitalized = capitalize(skillsArea)
+
+  return (
+    <>
+      <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
+        <Image
+          className='mb-4 select-none'
+          src={`/images/skills/${skillsAreaCapitalized}.png`}
+          alt={skillsAreaCapitalized}
+          width={36}
+          height={36}
+        />
+        <h4 className='text-md mb-2 font-bold text-slate-900'>
+          {skillsAreaCapitalized}
+        </h4>
+        <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
+          {/* skills data */}
+          {/* Render first 6 skills from skillsData */}
+          {skills.slice(0, 6).map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
+        </ul>
+
+        {/* More Skills Tooltip */}
+        {/* Pass the skills array except the first 6 elements */}
+        <SkillsTooltip moreSkills={skills.slice(6)} />
+      </li>
+    </>
+  )
+}
