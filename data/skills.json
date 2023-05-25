@@ -7,7 +7,16 @@
     "SASS/CSS",
     "TailwindCSS",
     "Styled Components",
-    "CSS Modules"
+    "CSS Modules",
+    "React Native",
+    "Electron",
+    "Redux",
+    "React Router",
+    "Context API",
+    "Svelte",
+    "Bootstrap",
+    "Headless UI",
+    "React Spring"
   ],
   "backend": [
     "Node.js",
@@ -15,10 +24,17 @@
     "Python",
     "Flask",
     "Django",
-    "Prisma",
-    "REST",
+    "REST APIs",
+    "Axios",
+    "Fetch",
+    "JSON",
+    "Authentication",
     "Nodemon",
-    "NPM"
+    "NPM YARN",
+    "Socket.io",
+    "Postman",
+    "Stripe",
+    "Paypal API"
   ],
   "database": [
     "MongoDB",
@@ -26,10 +42,12 @@
     "Mongoose",
     "Firebase",
     "SQL",
-    "Prisma",
     "Sanity",
+    "Prisma",
     "Strapi",
-    "Supabase"
+    "Supabase",
+    "MySQL",
+    "SQLite"
   ],
   "tools": [
     "Git",
@@ -39,6 +57,20 @@
     "Figma",
     "Kanban",
     "Unix Terminal",
-    "VS Code"
+    "VS Code",
+    "Vim",
+    "Prettier",
+    "Vite",
+    "Webpack",
+    "Babel",
+    "Deploying",
+    "Excel",
+    "Powerpoint",
+    "Word",
+    "Photoshop",
+    "Jira, Trello",
+    "Notion",
+    "SEO",
+    "Markdown"
   ]
 }
