@@ -1,15 +1,22 @@
 import Image from 'next/image'
-import skillsData from '@/data/skills.json'
 import SkillsTooltip from './SkillsTooltip'
 
-type Props = {
-  skillsArea: keyof typeof skillsData // Type of the property names in skillsData
+type SkillsData = {
+  frontend: string[]
+  backend: string[]
+  database: string[]
+  tools: string[]
 }
 
-export default function SkillsArea({ skillsArea }: Props) {
-  // Access the skillsData property using the skillsArea variable
-  // ? e.g. skillsData.frontend
-  const skills = skillsData[skillsArea]
+type Props = {
+  skillsData: SkillsData
+  // ? keyof is a Typescript utility type that returns the keys of an object
+  skillsArea: keyof SkillsData // 'frontend' | 'backend' | 'database' | 'tools'
+}
+
+export default function SkillsArea({ skillsData, skillsArea }: Props) {
+  // NOTE: Access the skillsData property using the skillsArea variable
+  const skills = skillsData[skillsArea] // e.g. skillsData['frontend']
 
   function capitalize(word: string) {
     return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
@@ -18,7 +25,7 @@ export default function SkillsArea({ skillsArea }: Props) {
 
   return (
     <>
-      <li className='min-w-[118px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
+      <li className='min-w-[150px] border-l-2 border-dotted border-slate-900/20 px-4 pt-4'>
         <Image
           className='mb-4 select-none'
           src={`/images/skills/${skillsAreaCapitalized}.png`}

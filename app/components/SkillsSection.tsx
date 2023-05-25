@@ -1,7 +1,5 @@
-import Image from 'next/image'
-import SkillsArea from './SkillsArea'
-import SkillsTooltip from './SkillsTooltip'
 import skillsData from '@/data/skills.json'
+import SkillsArea from './SkillsArea'
 
 export default function ProjectsSection() {
   return (
@@ -31,7 +29,7 @@ export default function ProjectsSection() {
 
         {/* Code - let myStack */}
         <div className='mb-20 rounded-md border border-[#103453] bg-[#154269] px-2 py-[0.1rem] font-semibold text-[#d2dbe8] shadow-sm shadow-[#154269]/40'>
-          <span>1 </span>
+          <span className='mr-3'>1</span>
           <span>
             <span className='text-[#f180f3]'>let </span>myStack <span>=</span>{' '}
             <span className='text-amber-400'>{'['}</span>
@@ -41,10 +39,10 @@ export default function ProjectsSection() {
         {/* Skills List */}
         <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
           {/* Skill Area */}
-          <SkillsArea skillsArea='frontend' />
-          <SkillsArea skillsArea='backend' />
-          <SkillsArea skillsArea='database' />
-          <SkillsArea skillsArea='tools' />
+          <SkillsArea skillsData={skillsData} skillsArea='frontend' />
+          <SkillsArea skillsData={skillsData} skillsArea='backend' />
+          <SkillsArea skillsData={skillsData} skillsArea='database' />
+          <SkillsArea skillsData={skillsData} skillsArea='tools' />
         </ul>
       </section>
     </>
