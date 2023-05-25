@@ -11,7 +11,10 @@ export default function SkillsTooltip({ moreSkills }: Props) {
       <span
         className={`${styles.SkillsTooltip} mt-2 cursor-default text-2xl font-semibold text-indigo-500`}
       >
-        <HiPlus className={`${styles.skillsTooltipButton} select-none`} />
+        {/* ? container to prevent hover flickering visual bug */}
+        <div className='relative -left-1 p-1'>
+          <HiPlus className={`${styles.skillsTooltipButton} select-none`} />
+        </div>
         <ul
           className={`${styles.tooltipContent} rounded-2xl border-2 border-indigo-500 bg-indigo-700 px-[2px] py-[0.38rem] text-center text-sm font-semibold text-indigo-100`}
         >
