@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import SkillsTooltip from './SkillsTooltip'
 import skillsData from '@/data/skills.json'
 
 export default function ProjectsSection() {
@@ -120,7 +121,8 @@ export default function ProjectsSection() {
                 </>
               ))}
             </ul>
-            <span className='text-2xl font-semibold text-indigo-500'>+</span>
+            {/* <span className='text-2xl font-semibold text-indigo-500'>+</span> */}
+            <SkillsTooltip />
           </li>
         </ul>
       </section>
