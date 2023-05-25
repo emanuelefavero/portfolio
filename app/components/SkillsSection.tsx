@@ -58,7 +58,10 @@ export default function ProjectsSection() {
                 </>
               ))}
             </ul>
-            <span className='text-2xl font-semibold text-indigo-500'>+</span>
+
+            {/* Frontend More Skills Tooltip */}
+            {/* Pass the skillsData.frontend array except first 6 elements */}
+            <SkillsTooltip moreSkills={skillsData.frontend.slice(6)} />
           </li>
 
           {/* Skill Area - Backend */}
@@ -79,7 +82,9 @@ export default function ProjectsSection() {
                 </>
               ))}
             </ul>
-            <span className='text-2xl font-semibold text-indigo-500'>+</span>
+
+            {/* Backend More Skills Tooltip */}
+            <SkillsTooltip moreSkills={skillsData.backend.slice(6)} />
           </li>
 
           {/* Skill Area - Database */}
@@ -100,7 +105,9 @@ export default function ProjectsSection() {
                 </>
               ))}
             </ul>
-            <span className='text-2xl font-semibold text-indigo-500'>+</span>
+
+            {/* Database More Skills Tooltip */}
+            <SkillsTooltip moreSkills={skillsData.database.slice(6)} />
           </li>
 
           {/* Skill Area - Tools */}
@@ -121,8 +128,9 @@ export default function ProjectsSection() {
                 </>
               ))}
             </ul>
-            {/* <span className='text-2xl font-semibold text-indigo-500'>+</span> */}
-            <SkillsTooltip />
+
+            {/* Tools More Skills Tooltip */}
+            <SkillsTooltip moreSkills={skillsData.tools.slice(6)} />
           </li>
         </ul>
       </section>

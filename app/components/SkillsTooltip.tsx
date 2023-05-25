@@ -1,7 +1,11 @@
 import styles from './SkillsTooltip.module.scss'
 import { HiPlus } from 'react-icons/hi'
 
-export default function SkillsTooltip() {
+type Props = {
+  moreSkills: string[]
+}
+
+export default function SkillsTooltip({ moreSkills }: Props) {
   return (
     <>
       <span
@@ -14,9 +18,11 @@ export default function SkillsTooltip() {
           <li className='mx-2 mb-1 border-b border-indigo-400 pb-[0.1rem] font-bold uppercase text-green-400'>
             More Skills
           </li>
-          <li>Testing Library</li>
-          <li>VS Code</li>
-          <li>Git</li>
+
+          {/* dynamic data from json file */}
+          {moreSkills.map((skill, index) => (
+            <li key={index}>{skill}</li>
+          ))}
         </ul>
       </span>
     </>
