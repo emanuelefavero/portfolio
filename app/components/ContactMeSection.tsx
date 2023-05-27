@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { SiGmail } from 'react-icons/si'
 import { BsLinkedin } from 'react-icons/bs'
@@ -18,7 +19,7 @@ export default function ContactMeSection() {
         </h2>
 
         {/* CONTACT ME CARDS */}
-        <div className='flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8 px-20'>
+        <div className='mb-20 flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8 px-20'>
           {/* GMAIL CARD */}
           <Link
             className='flex w-[22.18rem] items-center justify-center rounded-2xl border-t-2 border-indigo-50/10 bg-[#DE4033]/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#DE4033]/25 active:scale-[0.985] active:bg-[#DE4033]/20 active:text-indigo-400'
@@ -113,6 +114,34 @@ export default function ContactMeSection() {
               <p className='text-xl font-semibold'>emanuele_dev</p>
             </div>
           </Link>
+        </div>
+
+        {/* QR CODES */}
+        <div className='mb-5 flex w-full select-none flex-wrap justify-end gap-5'>
+          <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-sm shadow-[#0d0f35]'>
+            <Image
+              src='/images/qr-codes/qr-code-github.webp'
+              alt='GitHub QR Code'
+              width={80}
+              height={80}
+              className='mb-[2px] rounded-xl border-b-2 border-indigo-500'
+            />
+            <div className='px-[2px] pb-[2px] text-center text-sm font-medium uppercase'>
+              Scan Me
+            </div>
+          </div>
+          <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-sm shadow-[#0d0f35]'>
+            <Image
+              src='/images/qr-codes/qr-code-linkedin.webp'
+              alt='Linkedin QR Code'
+              width={80}
+              height={80}
+              className='mb-[2px] rounded-xl border-b-2 border-indigo-500'
+            />
+            <div className='px-[2px] pb-[2px] text-center text-sm font-medium uppercase'>
+              Scan Me
+            </div>
+          </div>
         </div>
       </section>
     </>
