@@ -5,6 +5,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 import { BsTelegram } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
+import QRCode from './QRCode'
 
 export default function ContactMeSection() {
   return (
@@ -118,30 +119,15 @@ export default function ContactMeSection() {
 
         {/* QR CODES */}
         <div className='mb-5 flex w-full select-none flex-wrap justify-end gap-5'>
-          <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-sm shadow-[#0d0f35]'>
-            <Image
-              src='/images/qr-codes/qr-code-github.webp'
-              alt='GitHub QR Code'
-              width={80}
-              height={80}
-              className='mb-[2px] rounded-xl border-b-2 border-indigo-500'
-            />
-            <div className='px-[2px] pb-[2px] text-center text-sm font-medium uppercase'>
-              Scan Me
-            </div>
-          </div>
-          <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-sm shadow-[#0d0f35]'>
-            <Image
-              src='/images/qr-codes/qr-code-linkedin.webp'
-              alt='Linkedin QR Code'
-              width={80}
-              height={80}
-              className='mb-[2px] rounded-xl border-b-2 border-indigo-500'
-            />
-            <div className='px-[2px] pb-[2px] text-center text-sm font-medium uppercase'>
-              Scan Me
-            </div>
-          </div>
+          <QRCode
+            src='/images/qr-codes/qr-code-github.webp'
+            alt='GitHub QR Code'
+          />
+
+          <QRCode
+            src='/images/qr-codes/qr-code-linkedin.webp'
+            alt='Linkedin QR Code'
+          />
         </div>
       </section>
     </>
