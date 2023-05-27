@@ -18,7 +18,7 @@ export default function ContactMeSection() {
         </h2>
 
         {/* CONTACT ME CARDS */}
-        <div className='flex w-full flex-row flex-wrap items-start justify-start gap-8'>
+        <div className='flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8 px-20'>
           {/* GMAIL CARD */}
           <Link
             className='flex w-[22.18rem] items-center justify-center rounded-2xl border-t-2 border-indigo-50/10 bg-[#DE4033]/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#DE4033]/25 active:scale-[0.985] active:bg-[#DE4033]/20 active:text-indigo-400'
