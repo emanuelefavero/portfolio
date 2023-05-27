@@ -1,5 +1,3 @@
-import animations from '@/app/styles/animations.module.scss'
-
 import HeroSocialLinks from './HeroSocialLinks'
 import HeroButton from './HeroButton'
 import HeroText from './HeroText'
@@ -12,9 +10,7 @@ interface Props {
 export default function HeroSection({ numberOfRepositories }: Props) {
   return (
     <>
-      <section
-        className={`${animations.fadeIn} relative flex w-full items-start justify-between px-40 pb-24 pt-24`}
-      >
+      <section className='relative flex w-full items-start justify-between px-40 pb-24 pt-24'>
         <div className='relative z-30 w-1/2'>
           <HeroText />
           <HeroButton />

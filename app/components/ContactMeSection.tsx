@@ -2,6 +2,8 @@ import Link from 'next/link'
 import QRCode from './QRCode'
 import ContactMeCards from './ContactMeCards'
 
+import FadeIntoView from './animations/FadeIntoView'
+
 export default function ContactMeSection() {
   return (
     <>
@@ -22,15 +24,19 @@ export default function ContactMeSection() {
 
         {/* QR CODES */}
         <div className='mb-5 flex w-full select-none flex-wrap justify-end gap-5'>
-          <QRCode
-            src='/images/qr-codes/qr-code-github.webp'
-            alt='GitHub QR Code'
-          />
+          <FadeIntoView>
+            <QRCode
+              src='/images/qr-codes/qr-code-github.webp'
+              alt='GitHub QR Code'
+            />
+          </FadeIntoView>
 
-          <QRCode
-            src='/images/qr-codes/qr-code-linkedin.webp'
-            alt='Linkedin QR Code'
-          />
+          <FadeIntoView>
+            <QRCode
+              src='/images/qr-codes/qr-code-linkedin.webp'
+              alt='Linkedin QR Code'
+            />
+          </FadeIntoView>
         </div>
       </section>
     </>
