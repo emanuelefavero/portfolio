@@ -1,5 +1,6 @@
 import './globals.css'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import ScrollDownButton from '@/app/components/ScrollDownButton'
 
 import { Inter } from 'next/font/google'
@@ -29,6 +30,10 @@ export default function RootLayout({
 
           {children}
         </main>
+
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   )
