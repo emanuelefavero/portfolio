@@ -30,23 +30,8 @@ export default function TypewriterTextEffect() {
       observer.observe(refValue)
     }
 
-    return () => {
-      if (refValue) {
-        observer.unobserve(refValue)
-      }
-    }
-  }, [])
-
-  useEffect(() => {
-    if (!isVisible) {
-      setCurrentText('')
-      setCurrentIndex(0)
-      setShowColoredText(false)
-      return
-    }
-
     // * TYPEWRITER TEXT EFFECT
-    if (currentIndex < text.length) {
+    if (isVisible && currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setCurrentText((prevText) => prevText + text[currentIndex])
         setCurrentIndex((prevIndex) => prevIndex + 1)
@@ -55,7 +40,21 @@ export default function TypewriterTextEffect() {
       return () => clearTimeout(timeout)
     }
 
-    setShowColoredText(true)
+    if (isVisible && currentIndex === text.length) {
+      setShowColoredText(true)
+    }
+
+    if (!isVisible) {
+      setCurrentText('')
+      setCurrentIndex(0)
+      setShowColoredText(false)
+    }
+
+    return () => {
+      if (refValue) {
+        observer.unobserve(refValue)
+      }
+    }
   }, [isVisible, currentIndex])
 
   return (
