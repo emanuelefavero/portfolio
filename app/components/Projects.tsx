@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard'
 import projectsData from '@/data/projects.json'
 
-import FadeIntoView from '@/app/animations/FadeIntoView'
+import FadeIntoView from './animations/FadeIntoView'
 
 export default function Projects() {
   return (

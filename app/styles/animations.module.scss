@@ -1,0 +1,40 @@
+// * FADE IN
+.fadeIn {
+  position: relative;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.fadeInDelayed {
+  position: relative;
+  animation: fadeIn 0.6s ease-in;
+}
+
+// * FADE IN SLIDE UP
+.fadeInSlideUp {
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out, slideUp 0.5s ease-in-out;
+}
+
+.fadeInSlideUpDelayed {
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out, slideUp 0.5s ease-in-out 0.1s;
+}
+
+// ANIMATIONS DEFINITIONS
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
