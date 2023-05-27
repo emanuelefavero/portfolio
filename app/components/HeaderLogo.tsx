@@ -1,6 +1,7 @@
 import styles from './HeaderLogo.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import logoImage from '@/public/images/logo-400x400.jpeg'
 
 export default function HeaderLogo() {
   return (
@@ -10,7 +11,7 @@ export default function HeaderLogo() {
     >
       <Image
         className='mr-4 select-none rounded-full border-2 border-slate-100 shadow-sm shadow-slate-400'
-        src='/images/logo-400x400.jpeg'
+        src={logoImage}
         alt='logo'
         width={44}
         height={44}

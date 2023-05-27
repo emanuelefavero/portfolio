@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import HeroInfo from './HeroInfo'
+import heroImage from '@/public/images/hero-image.png'
+import heroBlob from '@/public/images/hero-blob.svg'
 
 interface Props {
   numberOfRepositories: number
@@ -11,7 +13,7 @@ export default function HeroImage({ numberOfRepositories }: Props) {
       {/* Hero Blob */}
       <Image
         className='absolute -bottom-20 left-1/2 -translate-x-1/2 scale-150 transform select-none opacity-25'
-        src='/images/hero-blob.svg'
+        src={heroBlob}
         alt='Hero Blob'
         width={1000}
         height={1000}
@@ -19,7 +21,7 @@ export default function HeroImage({ numberOfRepositories }: Props) {
       {/* Hero Image */}
       <Image
         className='relative -bottom-4 -left-2 select-none'
-        src='/images/hero-image.png'
+        src={heroImage}
         alt='Emanuele Favero'
         width={1000}
         height={1000}
