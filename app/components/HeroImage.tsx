@@ -14,6 +14,7 @@ export default function HeroImage({ numberOfRepositories }: Props) {
       <Image
         className='absolute -bottom-20 left-1/2 -translate-x-1/2 scale-150 transform select-none opacity-25'
         src={heroBlob}
+        priority
         alt='Hero Blob'
         width={1000}
         height={1000}
@@ -22,6 +23,7 @@ export default function HeroImage({ numberOfRepositories }: Props) {
       <Image
         className='relative -bottom-4 -left-2 select-none'
         src={heroImage}
+        priority
         alt='Emanuele Favero'
         width={1000}
         height={1000}
