@@ -1,6 +1,7 @@
 import HeroSection from './components/HeroSection'
 import ProjectsSection from './components/ProjectsSection'
 import SkillsSection from './components/SkillsSection'
+import ContactMeSection from './components/ContactMeSection'
 
 async function getNumberOfRepositories() {
   const res = await fetch('https://api.github.com/users/emanuelefavero')
@@ -23,6 +24,7 @@ export default async function Home() {
       <HeroSection numberOfRepositories={numberOfRepositories} />
       <ProjectsSection />
       <SkillsSection />
+      <ContactMeSection />
     </>
   )
 }
