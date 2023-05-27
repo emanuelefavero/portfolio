@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import skillsData from '@/data/skills.json'
 import SkillsCode from './SkillsCode'
 import SkillsArea from './SkillsArea'
@@ -7,11 +8,13 @@ export default function ProjectsSection() {
     <>
       {/* SKILLS SECTION */}
       <section
-        id='projects'
+        id='skills'
         className='relative -top-16 flex w-full flex-col items-start justify-start px-40 pb-44 pt-32 text-slate-500'
       >
         {/* TEXT */}
-        <h3 className='mb-8 text-2xl font-bold text-indigo-600'>Skills</h3>
+        <h3 className='mb-8 text-2xl font-bold text-indigo-600'>
+          <Link href='#skills'>Skills</Link>
+        </h3>
         <h2 className='mb-10 text-4xl font-extrabold text-slate-900'>
           Frontend development is my area of expertise, but ...
         </h2>
