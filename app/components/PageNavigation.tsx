@@ -2,6 +2,7 @@
 
 import { Link as ScrollLink } from 'react-scroll'
 import useActiveSection from '@/app/hooks/useActiveSection'
+import ScrollDownButton from './ScrollDownButton'
 import ScrollToTopButton from './ScrollToTopButton'
 
 export default function PageNavigation() {
@@ -60,6 +61,9 @@ export default function PageNavigation() {
             : 'border border-slate-400 bg-slate-300'
         } h-4 w-4 cursor-pointer rounded-full transition-all duration-200`}
       ></ScrollLink>
+
+      {/* Scroll down button */}
+      <ScrollDownButton />
 
       {/* Scroll to top button */}
       <ScrollToTopButton />

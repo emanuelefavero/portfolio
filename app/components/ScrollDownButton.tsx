@@ -10,7 +10,7 @@ export default function ScrollDownButton() {
 
   return (
     <>
-      {/* Hide the button if scrolled down more than 200 px */}
+      {/* Hide the scroll down button if scrolled down more than 200 px */}
       {scrollDistance < 200 && (
         <ScrollLink
           to='projects'
@@ -18,7 +18,7 @@ export default function ScrollDownButton() {
           offset={100}
           title='Scroll down'
           aria-label='Scroll down'
-          className={`${styles.ScrollDownButton} absolute bottom-3 right-4 z-50 cursor-pointer text-4xl font-medium text-indigo-500`}
+          className={`${styles.ScrollDownButton} absolute bottom-4 right-4 z-50 cursor-pointer text-4xl font-medium text-indigo-500`}
         >
           <HiArrowDown />
         </ScrollLink>

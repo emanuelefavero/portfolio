@@ -37,7 +37,7 @@ export default function ScrollToTopButton() {
           to='home'
           smooth={true}
           offset={0}
-          className={`${styles.ScrollToTopButton} vertical-text absolute bottom-6 right-6  flex rotate-180 cursor-pointer items-center justify-center gap-3 text-center text-sm font-bold uppercase text-indigo-500 transition-all duration-200 hover:text-indigo-600 active:text-indigo-400`}
+          className={`${styles.ScrollToTopButton} vertical-text absolute bottom-6 right-6 z-50 flex rotate-180 cursor-pointer items-center justify-center gap-3 text-center text-sm font-bold uppercase text-indigo-500 transition-all duration-200 hover:text-indigo-600 active:text-indigo-400`}
         >
           <span className='text-lg'>
             <HiArrowDown />
