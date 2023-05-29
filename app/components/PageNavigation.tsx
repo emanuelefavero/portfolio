@@ -10,6 +10,7 @@ export default function PageNavigation() {
     <nav className='fixed right-0 top-0 z-40 flex h-screen w-[4.2rem] flex-col items-center justify-center gap-4'>
       {/* Home */}
       <ScrollLink
+        title='Home'
         to='home'
         smooth={true}
         offset={0}
@@ -22,6 +23,7 @@ export default function PageNavigation() {
 
       {/* Projects */}
       <ScrollLink
+        title='Projects'
         to='projects'
         smooth={true}
         offset={100}
@@ -34,6 +36,7 @@ export default function PageNavigation() {
 
       {/* Skills */}
       <ScrollLink
+        title='Skills'
         to='skills'
         smooth={true}
         offset={-10}
@@ -46,6 +49,7 @@ export default function PageNavigation() {
 
       {/* Contact Me */}
       <ScrollLink
+        title='Contact Me'
         to='contact-me'
         smooth={true}
         offset={110}
