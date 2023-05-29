@@ -10,7 +10,10 @@ interface Props {
 export default function HeroSection({ numberOfRepositories }: Props) {
   return (
     <>
-      <section className='relative flex w-full items-start justify-between px-40 pb-24 pt-24'>
+      <section
+        id='home'
+        className='relative flex w-full items-start justify-between px-40 pb-24 pt-24'
+      >
         <div className='relative z-30 w-1/2'>
           <HeroText />
           <HeroButton />
