@@ -49,6 +49,8 @@ body {
   /* flex-direction: column; */
   /* text-align: center; */
 
+  scroll-behavior: smooth;
+
   /* overflow: hidden; */
   overflow-x: hidden;
 }
@@ -98,6 +100,12 @@ section.dark {
 
 section.dark > * {
   transform: skew(0deg, 6deg);
+}
+
+#projects,
+#skills,
+#contact-me {
+  scroll-behavior: smooth;
 }
 
 /* DARK MODE */
