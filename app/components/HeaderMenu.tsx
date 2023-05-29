@@ -11,7 +11,7 @@ export default function HeaderMenu() {
         <li className='mr-6'>
           <ScrollLink
             to='projects'
-            // smooth={true}
+            smooth={true}
             // TIP: Set offset (in px) to adjust the scrolling position
             offset={100}
             // TIP: We added rounded-sm to style the accessibility focus outline
