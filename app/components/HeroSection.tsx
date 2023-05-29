@@ -12,7 +12,7 @@ export default function HeroSection({ numberOfRepositories }: Props) {
     <>
       <section
         id='home'
-        className='relative flex w-full items-start justify-between px-40 pb-24 pt-24'
+        className='relative flex w-full items-start justify-between px-40 pb-24 pt-40'
       >
         <div className='relative z-30 w-1/2'>
           <HeroText />
