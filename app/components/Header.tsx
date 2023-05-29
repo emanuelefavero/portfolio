@@ -12,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset
+      const currentScrollPos = window.scrollY
 
       if (prevScrollPos > currentScrollPos) {
         setIsHeaderHidden(false)
