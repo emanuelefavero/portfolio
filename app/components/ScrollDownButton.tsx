@@ -1,23 +1,10 @@
 'use client'
 
 import styles from './ScrollDownButton.module.scss'
-import { useEffect, useState } from 'react'
+import useScrollDistance from '@/app/hooks/useScrollDistance'
 
 export default function ScrollDownButton() {
-  const [scrollDistance, setScrollDistance] = useState(0)
-
-  const handleScroll = () => {
-    const currentScrollDistance =
-      window.scrollY || document.documentElement.scrollTop
-    setScrollDistance(currentScrollDistance)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+  const scrollDistance = useScrollDistance()
 
   return (
     <>
