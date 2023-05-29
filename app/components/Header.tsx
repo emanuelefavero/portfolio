@@ -5,6 +5,8 @@ import HeaderLogo from './HeaderLogo'
 import HeaderMenu from './HeaderMenu'
 
 export default function Header() {
+  // --------------------------------------------------------
+  // Hide - Show Header on scroll down - up
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [isHeaderHidden, setIsHeaderHidden] = useState(false)
 
@@ -27,15 +29,14 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [prevScrollPos])
+  // --------------------------------------------------------
 
   return (
     <div
-      className={`fixed ${
-        isHeaderHidden ? 'opacity-0' : 'opacity-100'
-      } z-50 flex w-full items-center justify-between bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200`}
-      style={{
-        transform: isHeaderHidden ? 'translateY(-100%)' : 'translateY(0)',
-      }}
+      className={`${
+        // Hide - Show Header on scroll down - up
+        isHeaderHidden ? '-translate-y-full' : 'translate-y-0'
+      } fixed z-50 flex w-full items-center justify-between bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200`}
     >
       <HeaderLogo />
       <HeaderMenu />
