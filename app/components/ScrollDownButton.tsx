@@ -8,7 +8,7 @@ export default function ScrollDownButton() {
 
   const handleScroll = () => {
     const currentScrollDistance =
-      window.pageYOffset || document.documentElement.scrollTop
+      window.scrollY || document.documentElement.scrollTop
     setScrollDistance(currentScrollDistance)
   }
 
