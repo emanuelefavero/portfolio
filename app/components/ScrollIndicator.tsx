@@ -37,7 +37,7 @@ export default function ScrollIndicator() {
           border-bottom: 1px solid rgba(49, 46, 129, 0.3);
           border-radius: 50px;
           top: 0;
-          left: 0;
+          left: -2px;
           /* transition: width 0.1s ease-out; */
           z-index: 1000;
         }
