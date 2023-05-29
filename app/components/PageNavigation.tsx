@@ -19,8 +19,8 @@ export default function PageNavigation() {
         className={`${
           activeSection === 'home'
             ? 'scale-125 border border-indigo-500 bg-indigo-600'
-            : 'border border-slate-400 bg-slate-300'
-        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200`}
+            : 'border border-slate-400 bg-slate-300 hover:border-indigo-600 hover:bg-indigo-300'
+        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200 hover:scale-110 active:scale-90`}
       ></ScrollLink>
 
       {/* Projects */}
@@ -32,8 +32,8 @@ export default function PageNavigation() {
         className={`${
           activeSection === 'projects'
             ? 'scale-125 border border-indigo-500 bg-indigo-600'
-            : 'border border-slate-400 bg-slate-300'
-        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200`}
+            : 'border border-slate-400 bg-slate-300 hover:border-indigo-600 hover:bg-indigo-300'
+        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200 hover:scale-110 active:scale-90`}
       ></ScrollLink>
 
       {/* Skills */}
@@ -45,8 +45,8 @@ export default function PageNavigation() {
         className={`${
           activeSection === 'skills'
             ? 'scale-125 border border-indigo-500 bg-indigo-600'
-            : 'border border-slate-400 bg-slate-300'
-        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200`}
+            : 'border border-slate-400 bg-slate-300 hover:border-indigo-600 hover:bg-indigo-300'
+        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200 hover:scale-110 active:scale-90`}
       ></ScrollLink>
 
       {/* Contact Me */}
@@ -58,8 +58,8 @@ export default function PageNavigation() {
         className={`${
           activeSection === 'contact-me'
             ? 'scale-125 border border-indigo-500 bg-indigo-600'
-            : 'border border-slate-400 bg-slate-300'
-        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200`}
+            : 'border border-slate-400 bg-slate-300 hover:border-indigo-600 hover:bg-indigo-300'
+        } h-4 w-4 cursor-pointer rounded-full transition-all duration-200 hover:scale-110 active:scale-90`}
       ></ScrollLink>
 
       {/* Scroll down button */}
