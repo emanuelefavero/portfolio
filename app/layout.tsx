@@ -1,5 +1,6 @@
 import './globals.css'
 import ScrollIndicator from './components/ScrollIndicator'
+import PageNavigation from './components/PageNavigation'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollDownButton from './components/ScrollDownButton'
@@ -23,6 +24,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.className} bg-slate-200`}>
         <ScrollIndicator />
+
+        <PageNavigation />
 
         <header>
           <Header />

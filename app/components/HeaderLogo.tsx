@@ -6,7 +6,7 @@ import logoImage from '@/public/images/logo-400x400.jpeg'
 export default function HeaderLogo() {
   return (
     <Link
-      href='/#home'
+      href='/'
       className={`${styles.HeaderLogo} flex cursor-pointer items-center justify-center rounded-lg px-2 py-1 text-xl font-bold text-slate-900`}
     >
       <Image

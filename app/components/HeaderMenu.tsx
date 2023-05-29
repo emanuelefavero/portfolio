@@ -11,6 +11,7 @@ export default function HeaderMenu() {
   return (
     <nav>
       <ul className='mr-4 flex select-none items-center justify-center text-xl font-semibold text-slate-700'>
+        {/* Projects */}
         <li className='mr-6'>
           <ScrollLink
             to='projects'
@@ -31,6 +32,8 @@ export default function HeaderMenu() {
             Projects
           </ScrollLink>
         </li>
+
+        {/* Skills */}
         <li className='mr-6'>
           <ScrollLink
             to='skills'
@@ -47,6 +50,8 @@ export default function HeaderMenu() {
             Skills
           </ScrollLink>
         </li>
+
+        {/* Download CV */}
         <li className='mr-6'>
           <Link
             href='/emanuele-favero-CV.pdf'
@@ -56,6 +61,8 @@ export default function HeaderMenu() {
             Download CV
           </Link>
         </li>
+
+        {/* Contact Me */}
         <li>
           <ScrollLink
             to='contact-me'
