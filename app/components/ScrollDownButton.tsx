@@ -10,7 +10,7 @@ export default function ScrollDownButton() {
 
   return (
     <>
-      {/* Hide the button if scrolled more than 200 px */}
+      {/* Hide the button if scrolled down more than 200 px */}
       {scrollDistance < 200 && (
         <ScrollLink
           to='projects'
