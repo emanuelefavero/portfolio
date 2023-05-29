@@ -5,8 +5,6 @@ import { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { HiArrowDown } from 'react-icons/hi'
 import useActiveSection from '@/app/hooks/useActiveSection'
-import useScrollDistance from '@/app/hooks/useScrollDistance'
-import useWebsiteHeight from '@/app/hooks/useWebsiteHeight'
 
 export default function PageNavigation() {
   const activeSection = useActiveSection()
