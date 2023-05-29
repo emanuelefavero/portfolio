@@ -1,7 +1,8 @@
 import './globals.css'
+import ScrollIndicator from './components/ScrollIndicator'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ScrollDownButton from '@/app/components/ScrollDownButton'
+import ScrollDownButton from './components/ScrollDownButton'
 
 import { Inter } from 'next/font/google'
 
@@ -21,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} bg-slate-200`}>
+        <ScrollIndicator />
+
         <header>
           <Header />
         </header>
