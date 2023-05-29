@@ -1,0 +1,19 @@
+.scrollToTopButton {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  transition: all 0.25s ease-in-out;
+
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(180deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(180deg);
+  }
+}
