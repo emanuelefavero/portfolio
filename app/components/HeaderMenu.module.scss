@@ -23,3 +23,7 @@
 .linkHoverLineAnimation:active::before {
   background-color: #475569; // slate 600
 }
+
+.activeLink {
+  color: #4f46e5;
+}
