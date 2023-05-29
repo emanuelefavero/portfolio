@@ -1,5 +1,6 @@
 // Link Hover Line Animation
-.linkHoverLineAnimation::before {
+.linkHoverLineAnimation::before,
+.activeLinkHoverLineAnimation::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -14,16 +15,27 @@
 }
 
 // Hover
-.linkHoverLineAnimation:hover::before {
+.linkHoverLineAnimation:hover::before,
+.activeLinkHoverLineAnimation:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
 // Active
-.linkHoverLineAnimation:active::before {
+.linkHoverLineAnimation:active::before,
+.activeLinkHoverLineAnimation:active::before {
   background-color: #475569; // slate 600
 }
 
+// * ACTIVE SECTION LINK STATE
 .activeLink {
-  color: #4f46e5;
+  color: #4f46e5; // indigo 600
+
+  &:active {
+    color: #6366f1; // indigo 500
+  }
+}
+
+.activeLinkHoverLineAnimation::before {
+  background-color: #4f46e5;
 }
