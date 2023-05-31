@@ -30,7 +30,9 @@ export default function RootLayout({
           <Header />
         </header>
 
-        <main>{children}</main>
+        <main className='flex flex-col items-center justify-center'>
+          {children}
+        </main>
 
         <footer>
           <Footer />
