@@ -20,6 +20,17 @@
   animation: fadeIn 0.5s ease-in-out, slideUp 0.5s ease-in-out 0.1s;
 }
 
+// * FADE IN SLIDE UP SLOW
+.fadeInSlideUpSlow {
+  position: relative;
+  animation: fadeInSlow 0.4s ease-in-out, slideUpSlow 0.4s ease-in-out 0.2s;
+}
+
+// * NO ANIMATION
+.noAnimation {
+  animation: none;
+}
+
 // ANIMATIONS DEFINITIONS
 @keyframes fadeIn {
   0% {
@@ -33,6 +44,30 @@
 @keyframes slideUp {
   0% {
     transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpSlow {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(30px);
   }
   100% {
     transform: translateY(0);
