@@ -26,6 +26,8 @@ export default function useActiveSection(): string {
       setActiveSection(currentSection)
     }
 
+    handleScroll() // Call handleScroll once to set the initial activeSection value
+
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)

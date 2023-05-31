@@ -26,7 +26,7 @@ export default function RootLayout({
 
         <PageNavigation />
 
-        <header>
+        <header id='header'>
           <Header />
         </header>
 
