@@ -6,7 +6,7 @@ export default function HeroText() {
       <h2 className='mb-1 text-sm font-semibold uppercase text-slate-500 2xs:text-lg'>
         Hello, I&apos;m Emanuele
       </h2>
-      <h1 className='relative -left-1 mb-7 flex flex-col gap-1 text-sm font-extrabold text-slate-900 4xs:text-2xl 3xs:text-3xl 2xs:text-5xl xs:text-6xl md:max-w-xl md:text-6xl xl:text-8xl'>
+      <h1 className='relative left-0 mb-7 flex flex-col gap-1 text-sm font-extrabold text-slate-900 4xs:text-2xl 3xs:text-3xl 2xs:-left-[0.09rem] 2xs:text-5xl xs:-left-[0.15rem] xs:text-6xl md:max-w-xl md:text-6xl xl:text-8xl'>
         <span className='text-indigo-600'>
           <FadeTextEffect />
         </span>{' '}
