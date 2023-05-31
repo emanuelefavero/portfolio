@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       {/* SKILLS SECTION */}
       <section
         id='skills'
-        className='relative -top-16 flex w-full flex-col items-start justify-start px-40 pb-44 pt-32 text-slate-500'
+        className='relative -top-16 flex w-full flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
         <h3 className='mb-8 text-2xl font-bold text-indigo-600'>

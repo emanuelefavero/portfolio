@@ -9,7 +9,7 @@ export default function ContactMeSection() {
     <>
       <section
         id='contact-me'
-        className='dark relative -top-28 flex w-full flex-col items-start justify-start border-y-4 border-indigo-800 px-40 pb-44 pt-32 text-indigo-50'
+        className='dark relative -top-28 flex w-full flex-col items-start justify-start border-y-4 border-indigo-800 px-4 pb-44 pt-32 text-indigo-50 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
         <h3 className='mb-8 text-2xl font-bold text-indigo-500'>

@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className='flex w-full justify-center gap-2 px-40 pb-20 pt-2 font-medium text-slate-700'>
+      <div className='flex w-full justify-center gap-2 px-4 pb-20 pt-2 font-medium text-slate-700 md:px-20 lg:px-28 xl:px-40'>
         <span className='select-none tracking-widest'>
           © {new Date().getFullYear()} •{' '}
         </span>
