@@ -1,11 +1,14 @@
-'use client'
-
 import styles from './HamburgerMenuButton.module.scss'
-import { useState } from 'react'
 
-export default function HamburgerMenuButton() {
-  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false)
+type Props = {
+  isHamburgerMenuOpen: boolean
+  setIsHamburgerMenuOpen: (isHamburgerMenuOpen: boolean) => void
+}
 
+export default function HamburgerMenuButton({
+  isHamburgerMenuOpen,
+  setIsHamburgerMenuOpen,
+}: Props) {
   return (
     <>
       <button

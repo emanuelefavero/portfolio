@@ -3,7 +3,11 @@ import Link from 'next/link'
 import { Link as ScrollLink } from 'react-scroll'
 import useActiveSection from '@/app/hooks/useActiveSection'
 
-export default function HeaderMenuItems() {
+type Props = {
+  setIsHamburgerMenuOpen?: (isHamburgerMenuOpen: boolean) => void
+}
+
+export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
   const activeSection = useActiveSection()
 
   return (
@@ -25,6 +29,9 @@ export default function HeaderMenuItems() {
           } ${
             activeSection === 'projects' && styles.activeLink
           } relative cursor-pointer rounded-sm active:text-slate-600`}
+          onClick={() =>
+            setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
+          }
         >
           Projects
         </ScrollLink>
@@ -43,6 +50,9 @@ export default function HeaderMenuItems() {
           } ${
             activeSection === 'skills' && styles.activeLink
           } relative cursor-pointer rounded-sm active:text-slate-600`}
+          onClick={() =>
+            setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
+          }
         >
           Skills
         </ScrollLink>
@@ -54,6 +64,9 @@ export default function HeaderMenuItems() {
           href='/emanuele-favero-CV.pdf'
           target='_blank'
           className={`${styles.linkHoverLineAnimation} relative cursor-pointer rounded-sm active:text-slate-600`}
+          onClick={() =>
+            setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
+          }
         >
           Download CV
         </Link>
@@ -66,6 +79,9 @@ export default function HeaderMenuItems() {
           smooth={true}
           offset={110}
           className='relative transform cursor-pointer rounded-full border-b border-slate-300 bg-slate-50 px-4 py-2 shadow-sm shadow-slate-400 transition-all duration-100 hover:bg-slate-100 hover:text-slate-600 active:top-[1px] active:shadow-none'
+          onClick={() =>
+            setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
+          }
         >
           <span
             className={`${
