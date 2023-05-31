@@ -1,9 +1,9 @@
 'use client'
 
-import './AnimatedText.css'
+import styles from './FadeTextEffect.module.scss'
 import { useEffect, useState } from 'react'
 
-export default function AnimatedText() {
+export default function FadeTextEffect() {
   const [fadeIntervalMs] = useState(3000)
   const [wordChangeIntervalMs] = useState(fadeIntervalMs * 2)
   const [wordsToAnimate] = useState(['Frontend', 'Backend', 'Fullstack', 'Web'])
@@ -33,7 +33,7 @@ export default function AnimatedText() {
 
   return (
     <>
-      <span className={`${isFadeIn ? 'fade-in' : 'fade-out'} text-indigo-600`}>
+      <span className={`${isFadeIn ? styles.fadeIn : styles.fadeOut}`}>
         {wordsToAnimate[wordOrder]}
       </span>
     </>

@@ -1,4 +1,4 @@
-import AnimatedText from './AnimatedText'
+import FadeTextEffect from './FadeTextEffect'
 
 export default function HeroText() {
   return (
@@ -7,7 +7,10 @@ export default function HeroText() {
         Hello, I&apos;m Emanuele
       </h2>
       <h1 className='relative -left-1 mb-7 flex max-w-xl flex-col gap-1 text-8xl font-extrabold text-slate-900'>
-        <AnimatedText /> Developer
+        <span className='text-indigo-600'>
+          <FadeTextEffect />
+        </span>{' '}
+        Developer
       </h1>
       <p className='mb-8 max-w-md text-xl font-semibold leading-normal text-slate-500'>
         Based in Italy • I&apos;m passionate about coding immersive UX/UI
