@@ -1,0 +1,57 @@
+.HamburgerMenuButton {
+  display: block;
+  position: relative;
+
+  padding: 0.3rem;
+
+  .hamburgerLines {
+    display: block;
+    position: relative;
+    height: 1.65rem;
+    width: 2rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 0;
+
+    transition: left 0.2s ease-in-out;
+
+    &.hamburgerMenuOpen {
+      left: 0.32rem;
+    }
+
+    .line {
+      height: 4px;
+      width: 100%;
+      border-radius: 1rem;
+      background: #334155;
+    }
+
+    .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.2s ease-in-out;
+
+      &.hamburgerMenuOpen {
+        transform: rotate(45deg);
+      }
+    }
+
+    .line2 {
+      transition: transform 0.1s ease-in-out;
+
+      &.hamburgerMenuOpen {
+        transform: scaleY(0);
+      }
+    }
+
+    .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.2s ease-in-out;
+
+      &.hamburgerMenuOpen {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
