@@ -10,10 +10,10 @@ import { BsTwitter } from 'react-icons/bs'
 export default function ContactMeCards() {
   return (
     <>
-      <div className='mb-20 flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8 px-20'>
+      <div className='mb-20 flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8'>
         {/* GMAIL CARD */}
         <Link
-          className='flex w-[22.18rem] items-center justify-center rounded-2xl border-t-2 border-indigo-50/10 bg-[#DE4033]/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#DE4033]/25 active:scale-[0.985] active:bg-[#DE4033]/20 active:text-indigo-400'
+          className='flex w-[22.18rem] items-center justify-center rounded-2xl border-t-2 border-indigo-50/10 bg-[#DE4033]/20 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#DE4033]/25 active:scale-[0.985] active:bg-[#DE4033]/20 active:text-indigo-400'
           href='mailto:info@emanuelefavero.com'
           target='_blank'
         >

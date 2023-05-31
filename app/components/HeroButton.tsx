@@ -7,7 +7,7 @@ export default function HeroButton() {
       <Link
         href='/#contact-me'
         type='button'
-        className={`${styles.HeroButton} hover:tracking-wide' mb-36 max-w-max select-none rounded-full bg-slate-900 px-6 py-2 text-xl font-bold text-white shadow-sm shadow-indigo-300`}
+        className={`${styles.HeroButton} hover:tracking-wide' mb-16 max-w-max select-none rounded-full bg-slate-900 px-2 py-2 text-lg font-bold text-white shadow-sm shadow-indigo-300 3xs:px-6 3xs:text-xl 2xs:mb-24 xs:mb-36`}
       >
         Let&apos;s Talk
       </Link>

@@ -12,14 +12,14 @@ export default function HeroSection({ numberOfRepositories }: Props) {
     <>
       <section
         id='home'
-        className='relative flex w-full flex-col items-start justify-between overflow-hidden bg-red-300 px-20 pb-24 pt-40 md:flex-row md:px-20 lg:px-28 xl:px-40'
+        className='relative flex w-full flex-col items-start justify-between overflow-hidden px-10 pb-24 pt-40 md:flex-row md:px-20 lg:px-28 xl:px-40'
       >
-        <div className='relative z-30 w-1/2'>
+        <div className='relative z-30 mb-10 w-full md:mb-4 md:w-1/2'>
           <HeroText />
           <HeroButton />
           <HeroSocialLinks />
         </div>
-        <div className='relative md:w-1/2'>
+        <div className='relative hidden w-full 3xs:block md:w-1/2'>
           <HeroImage numberOfRepositories={numberOfRepositories} />
         </div>
       </section>
