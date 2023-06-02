@@ -15,28 +15,32 @@ export default function ContactMeSection() {
         <h3 className='mb-8 text-2xl font-bold text-indigo-500'>
           <Link href='#contact-me'>Contact Me</Link>
         </h3>
-        <h2 className='mb-36 text-4xl font-extrabold text-indigo-50'>
+        <h2 className='mb-36 text-4xl font-extrabold text-indigo-50 xl:mb-44'>
           Get in Touch
         </h2>
 
-        {/* CONTACT ME CARDS */}
-        <ContactMeCards />
+        <div className='flex w-full justify-center'>
+          <div className='max-w-screen-xl bg-red-300'>
+            {/* CONTACT ME CARDS */}
+            <ContactMeCards />
 
-        {/* QR CODES */}
-        <div className='mb-5 flex w-full select-none flex-wrap justify-end gap-5'>
-          <FadeIntoView>
-            <QRCode
-              src='/images/qr-codes/qr-code-github.webp'
-              alt='GitHub QR Code'
-            />
-          </FadeIntoView>
+            {/* QR CODES */}
+            <div className='mb-5 flex w-full select-none flex-wrap justify-end gap-5'>
+              <FadeIntoView>
+                <QRCode
+                  src='/images/qr-codes/qr-code-github.webp'
+                  alt='GitHub QR Code'
+                />
+              </FadeIntoView>
 
-          <FadeIntoView>
-            <QRCode
-              src='/images/qr-codes/qr-code-linkedin.webp'
-              alt='Linkedin QR Code'
-            />
-          </FadeIntoView>
+              <FadeIntoView>
+                <QRCode
+                  src='/images/qr-codes/qr-code-linkedin.webp'
+                  alt='Linkedin QR Code'
+                />
+              </FadeIntoView>
+            </div>
+          </div>
         </div>
       </section>
     </>
