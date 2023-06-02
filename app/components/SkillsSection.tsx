@@ -12,9 +12,9 @@ export default function ProjectsSection() {
         className='relative -top-16 flex w-full max-w-screen-3xl flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
-        <h3 className='mb-8 text-lg font-bold text-indigo-600'>
+        <h2 className='mb-8 text-lg font-bold text-indigo-600'>
           <Link href='#skills'>Skills</Link>
-        </h3>
+        </h2>
         <h4 className='mb-10 text-xl font-extrabold text-slate-900 2xs:text-4xl'>
           Frontend development is my area of expertise, but ...
         </h4>
