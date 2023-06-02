@@ -14,7 +14,7 @@ export default function ProjectsSection() {
         <h2 className='mb-12 text-lg font-extrabold text-indigo-50 2xs:text-4xl'>
           Work / Portfolio
         </h2>
-        <p className='mb-10 max-w-xl text-xl font-medium text-[#a5b0d4]'>
+        <p className='mb-10 max-w-xl text-xl font-medium text-[#a5b0d4] xl:mb-20 3xl:mb-40'>
           Explore my recent major projects, born from my passion and developed
           from scratch
         </p>
