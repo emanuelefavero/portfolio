@@ -1,8 +1,6 @@
 import styles from './HeaderMenuItems.module.scss'
-// import Link from 'next/link'
 import { Link as ScrollLink } from 'react-scroll'
 import useActiveSection from '@/app/hooks/useActiveSection'
-import DownloadCVButton from './DownloadCVButton'
 
 type Props = {
   setIsHamburgerMenuOpen?: (isHamburgerMenuOpen: boolean) => void
@@ -10,6 +8,15 @@ type Props = {
 
 export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
   const activeSection = useActiveSection()
+
+  const handleDownloadCV = () => {
+    const fileUrl = '/emanuele-favero-CV.pdf'
+    const newWindow = window.open(fileUrl, '_blank')
+    if (newWindow) {
+      // Security code - Prevent new window from accessing the current window methods and properties
+      newWindow.opener = null
+    }
+  }
 
   return (
     <>
@@ -60,19 +67,14 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
       </li>
 
       {/* Download CV */}
-      {/* <li className='mr-6'>
-        <Link
-          href='/emanuele-favero-CV.pdf'
-          target='_blank'
+      <li className='mr-6'>
+        <button
           className={`${styles.linkHoverLineAnimation} relative cursor-pointer rounded-sm active:text-slate-600`}
-          onClick={() =>
-            setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
-          }
+          onClick={handleDownloadCV}
         >
           Download CV
-        </Link>
-      </li> */}
-      <DownloadCVButton />
+        </button>
+      </li>
 
       {/* Contact Me */}
       <li>
