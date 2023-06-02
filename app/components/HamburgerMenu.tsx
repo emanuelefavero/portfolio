@@ -15,7 +15,7 @@ export default function HamburgerMenu() {
         setIsHamburgerMenuOpen={setIsHamburgerMenuOpen}
       />
 
-      <ul
+      <div
         className={`text-slate text-slate absolute right-0 top-0 flex flex-col items-center justify-center border-2 border-b-slate-700 bg-slate-300/95 text-2xl font-semibold text-slate-700 transition-all duration-200`}
         style={{
           width: isHamburgerMenuOpen ? '100%' : '0',
@@ -28,14 +28,14 @@ export default function HamburgerMenu() {
           transition: 'all 0.2s ease-in-out',
         }}
       >
-        <div
+        <ul
           className={`flex flex-col gap-8 ${
             isHamburgerMenuOpen ? styles.fadeInSlow : ''
           }`}
         >
           <HeaderMenuItems setIsHamburgerMenuOpen={setIsHamburgerMenuOpen} />
-        </div>
-      </ul>
+        </ul>
+      </div>
     </>
   )
 }
