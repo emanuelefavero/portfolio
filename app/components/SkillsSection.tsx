@@ -15,9 +15,9 @@ export default function ProjectsSection() {
         <h3 className='mb-8 text-lg font-bold text-indigo-600'>
           <Link href='#skills'>Skills</Link>
         </h3>
-        <h2 className='mb-10 text-xl font-extrabold text-slate-900 2xs:text-4xl'>
+        <h4 className='mb-10 text-xl font-extrabold text-slate-900 2xs:text-4xl'>
           Frontend development is my area of expertise, but ...
-        </h2>
+        </h4>
         <p className='mb-16 max-w-xl text-xl font-semibold text-slate-600/90'>
           I am highly proficient in{' '}
           <span className='text-indigo-600'>Typescript</span>,{' '}
