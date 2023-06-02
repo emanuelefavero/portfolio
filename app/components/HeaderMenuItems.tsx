@@ -2,6 +2,8 @@ import styles from './HeaderMenuItems.module.scss'
 import { Link as ScrollLink } from 'react-scroll'
 import useActiveSection from '@/app/hooks/useActiveSection'
 
+// BEWARE: the react-scroll library raises a warning in Lighthouse - "Links are not crawlable"
+
 type Props = {
   setIsHamburgerMenuOpen?: (isHamburgerMenuOpen: boolean) => void
 }
