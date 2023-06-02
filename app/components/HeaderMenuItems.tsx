@@ -61,7 +61,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
       {/* Download CV */}
       <li className='mr-6'>
         <Link
-          href='/emanuele-favero-CV.pdf'
+          href='emanuele-favero-CV.pdf'
           target='_blank'
           className={`${styles.linkHoverLineAnimation} relative cursor-pointer rounded-sm active:text-slate-600`}
           onClick={() =>
