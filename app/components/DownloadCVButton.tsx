@@ -1,5 +1,3 @@
-'use client'
-
 import styles from './HeaderMenuItems.module.scss'
 import { useRouter } from 'next/navigation'
 
