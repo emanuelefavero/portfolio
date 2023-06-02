@@ -36,7 +36,7 @@ export default function SkillsArea({ skillsData, skillsArea }: Props) {
         <h4 className='text-md mb-2 font-bold text-slate-900'>
           {skillsAreaCapitalized}
         </h4>
-        <ul className='flex flex-col gap-1 font-semibold text-[#6f768e]'>
+        <ul className='flex flex-col gap-1 font-semibold text-slate-600/90'>
           {/* SKILLS */}
           {/* Render first 6 skills from skillsData */}
           {skills.slice(0, 6).map((skill, index) => (
