@@ -47,7 +47,7 @@ export const metadata = {
   },
 
   // themeColor
-  themeColor: '#4f46e5',
+  themeColor: '#4338ca',
 
   // manifest
   manifest: `${server}/manifest.json`,
