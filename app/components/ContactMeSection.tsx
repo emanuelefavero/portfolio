@@ -20,7 +20,7 @@ export default function ContactMeSection() {
         </h2>
 
         <div className='flex w-full justify-center'>
-          <div className='max-w-screen-xl bg-red-300'>
+          <div className='max-w-screen-xl'>
             {/* CONTACT ME CARDS */}
             <ContactMeCards />
 
