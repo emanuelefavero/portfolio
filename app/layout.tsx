@@ -1,4 +1,5 @@
 import './globals.css'
+import { server } from '@/config/server'
 import ScrollIndicator from './components/ScrollIndicator'
 import PageNavigation from './components/PageNavigation'
 import Header from './components/Header'
@@ -18,11 +19,11 @@ export const metadata = {
   openGraph: {
     title: 'Emanuele Favero Portfolio',
     description: 'A software engineer based in Italy',
-    url: 'https://emanuelefavero.com',
+    url: `${server}`,
     siteName: 'Emanuele Favero Portfolio',
     images: [
       {
-        url: 'https://emanuelefavero.com/icon-512x512.png',
+        url: `${server}/icon-512x512.png`,
         width: 1200,
         height: 630,
         alt: 'Emanuele Favero Portfolio',
@@ -49,7 +50,7 @@ export const metadata = {
   themeColor: '#4f46e5',
 
   // manifest
-  manifest: 'https://emanuelefavero.com/manifest.json',
+  manifest: `${server}/manifest.json`,
 
   // TODO: Twitter
 

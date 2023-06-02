@@ -2,8 +2,6 @@
   "theme_color": "#4f46e5",
   "background_color": "#e2e8f0",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
   "name": "Emanuele Favero Portfolio",
   "short_name": "EF Portfolio",
   "description": "Fullstack Developer based in Italy",
