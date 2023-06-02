@@ -12,6 +12,8 @@ export default function HamburgerMenuButton({
   return (
     <>
       <button
+        role='button'
+        aria-label='Open menu'
         className={`${styles.HamburgerMenuButton}`}
         onClick={() => setIsHamburgerMenuOpen(!isHamburgerMenuOpen)}
       >
