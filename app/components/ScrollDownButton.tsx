@@ -17,7 +17,6 @@ export default function ScrollDownButton() {
           smooth={true}
           offset={100}
           title='Scroll down'
-          aria-label='Scroll down'
           className={`${styles.ScrollDownButton} absolute bottom-4 right-4 z-50 cursor-pointer text-4xl font-medium text-indigo-500`}
         >
           <HiArrowDown />
