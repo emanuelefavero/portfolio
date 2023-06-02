@@ -19,7 +19,7 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <>
-      <div className='h-full w-full flex-1 overflow-hidden rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98] 2xs:w-80'>
+      <div className='h-full w-full flex-1 overflow-hidden rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98] xs:w-80'>
         {/* WEBSITE URL LINK */}
         <div className={styles.websiteURL}>
           <Link
