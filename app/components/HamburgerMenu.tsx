@@ -30,7 +30,7 @@ export default function HamburgerMenu() {
       >
         <div
           className={`flex flex-col gap-8 ${
-            isHamburgerMenuOpen ? styles.fadeInSlideUpSlow : ''
+            isHamburgerMenuOpen ? styles.fadeInSlow : ''
           }`}
         >
           <HeaderMenuItems setIsHamburgerMenuOpen={setIsHamburgerMenuOpen} />
