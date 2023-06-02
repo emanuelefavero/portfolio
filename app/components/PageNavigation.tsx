@@ -9,7 +9,7 @@ export default function PageNavigation() {
   const activeSection = useActiveSection()
 
   return (
-    <nav className='fixed right-0 top-0 z-40 hidden h-screen w-[4.2rem] select-none flex-col items-center justify-center gap-4 3xs:flex'>
+    <div className='fixed right-0 top-0 z-40 hidden h-screen w-[4.2rem] select-none flex-col items-center justify-center gap-4 3xs:flex'>
       {/* Home */}
       <ScrollLink
         title='Home'
@@ -67,6 +67,6 @@ export default function PageNavigation() {
 
       {/* Scroll to top button */}
       <ScrollToTopButton />
-    </nav>
+    </div>
   )
 }

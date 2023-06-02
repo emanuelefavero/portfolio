@@ -24,7 +24,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-slate-200`}>
         <ScrollIndicator />
 
-        <PageNavigation />
+        <nav>
+          <PageNavigation />
+        </nav>
 
         <header id='header'>
           <Header />

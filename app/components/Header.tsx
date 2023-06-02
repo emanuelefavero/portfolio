@@ -44,10 +44,13 @@ export default function Header() {
           isHeaderHidden
           ? '-translate-y-full'
           : 'translate-y-0'
-      } fixed z-50 flex w-full flex-col-reverse items-start justify-between bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200 4xs:flex-row 4xs:items-center`}
+      } fixed z-50 flex w-full items-center justify-center bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200`}
     >
-      <HeaderLogo />
-      <HeaderMenu />
+      {/* MAX WIDTH */}
+      <div className='flex w-full max-w-screen-3xl flex-col-reverse items-start justify-between 4xs:flex-row 4xs:items-center'>
+        <HeaderLogo />
+        <HeaderMenu />
+      </div>
     </div>
   )
 }
