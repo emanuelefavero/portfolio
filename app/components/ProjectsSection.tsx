@@ -11,7 +11,7 @@ export default function ProjectsSection() {
         <h3 className='mb-8 text-2xl font-bold text-indigo-500'>
           <Link href='#projects'>Projects</Link>
         </h3>
-        <h2 className='mb-12 text-4xl font-extrabold text-indigo-50'>
+        <h2 className='mb-12 text-lg font-extrabold text-indigo-50 2xs:text-4xl'>
           Work / Portfolio
         </h2>
         <p className='mb-10 max-w-xl text-xl font-medium text-[#a5b0d4]'>

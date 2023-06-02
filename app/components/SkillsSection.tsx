@@ -9,13 +9,13 @@ export default function ProjectsSection() {
       {/* SKILLS SECTION */}
       <section
         id='skills'
-        className='relative -top-16 flex w-full flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 md:px-20 lg:px-28 xl:px-40'
+        className='relative -top-16 flex w-full flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
-        <h3 className='mb-8 text-2xl font-bold text-indigo-600'>
+        <h3 className='mb-8 text-lg font-bold text-indigo-600'>
           <Link href='#skills'>Skills</Link>
         </h3>
-        <h2 className='mb-10 text-4xl font-extrabold text-slate-900'>
+        <h2 className='mb-10 text-xl font-extrabold text-slate-900 2xs:text-4xl'>
           Frontend development is my area of expertise, but ...
         </h2>
         <p className='mb-16 max-w-xl text-xl font-semibold text-[#6f768e]'>
@@ -36,13 +36,15 @@ export default function ProjectsSection() {
         <SkillsCode />
 
         {/* SKILLS LIST */}
-        <ul className='flex w-full flex-wrap justify-between gap-10 px-20'>
-          {/* SKILLS AREAS */}
-          <SkillsArea skillsData={skillsData} skillsArea='frontend' />
-          <SkillsArea skillsData={skillsData} skillsArea='backend' />
-          <SkillsArea skillsData={skillsData} skillsArea='database' />
-          <SkillsArea skillsData={skillsData} skillsArea='tools' />
-        </ul>
+        <div className='flex w-full justify-center'>
+          <ul className='flex w-full max-w-screen-lg flex-wrap justify-between gap-10'>
+            {/* SKILLS AREAS */}
+            <SkillsArea skillsData={skillsData} skillsArea='frontend' />
+            <SkillsArea skillsData={skillsData} skillsArea='backend' />
+            <SkillsArea skillsData={skillsData} skillsArea='database' />
+            <SkillsArea skillsData={skillsData} skillsArea='tools' />
+          </ul>
+        </div>
       </section>
     </>
   )
