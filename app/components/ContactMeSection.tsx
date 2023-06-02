@@ -9,18 +9,18 @@ export default function ContactMeSection() {
     <>
       <section
         id='contact-me'
-        className='dark relative -top-28 flex w-full flex-col items-start justify-start border-y-4 border-indigo-800 px-4 pb-44 pt-32 text-indigo-50 md:px-20 lg:px-28 xl:px-40'
+        className='dark relative -top-28 flex w-full flex-col items-start justify-start border-y-4 border-indigo-800 px-4 pb-44 pt-32 text-indigo-50 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
         <h3 className='mb-8 text-2xl font-bold text-indigo-500'>
           <Link href='#contact-me'>Contact Me</Link>
         </h3>
-        <h2 className='mb-36 text-4xl font-extrabold text-indigo-50 xl:mb-44'>
+        <h2 className='mb-36 text-xl font-extrabold text-indigo-50 2xs:text-4xl xl:mb-44'>
           Get in Touch
         </h2>
 
         <div className='flex w-full justify-center'>
-          <div className='max-w-screen-xl'>
+          <div className='max-w-screen-lg'>
             {/* CONTACT ME CARDS */}
             <ContactMeCards />
 
