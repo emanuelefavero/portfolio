@@ -23,9 +23,9 @@ export default function ContactMeCards() {
             title='Gmail'
           />
           <div className='hidden 2xs:block'>
-            <h5 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
               Email
-            </h5>
+            </h4>
             <p className='text-sm font-semibold xs:text-xl'>
               info@emanuelefavero.com
             </p>
@@ -44,9 +44,9 @@ export default function ContactMeCards() {
             title='Linkedin'
           />
           <div className='hidden 2xs:block'>
-            <h5 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
               Linkedin
-            </h5>
+            </h4>
             <p className='text-sm font-semibold xs:text-xl'>
               in/emanuelefavero
             </p>
@@ -65,9 +65,9 @@ export default function ContactMeCards() {
             title='GitHub'
           />
           <div className='hidden 2xs:block'>
-            <h5 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
               GitHub
-            </h5>
+            </h4>
             <p className='text-sm font-semibold xs:text-xl'>emanuelefavero</p>
           </div>
         </Link>
@@ -84,9 +84,9 @@ export default function ContactMeCards() {
             title='Telegram'
           />
           <div className='hidden 2xs:block'>
-            <h5 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
               Telegram
-            </h5>
+            </h4>
             <p className='text-sm font-semibold xs:text-xl'>
               t.me/emanuelefavero
             </p>
@@ -105,9 +105,9 @@ export default function ContactMeCards() {
             title='Twitter'
           />
           <div className='hidden 2xs:block'>
-            <h5 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
               Twitter
-            </h5>
+            </h4>
             <p className='text-sm font-semibold xs:text-xl'>emanuele_dev</p>
           </div>
         </Link>

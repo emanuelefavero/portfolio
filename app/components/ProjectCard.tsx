@@ -36,13 +36,13 @@ export default function ProjectCard({ project }: Props) {
               height={176}
             />
             <div className='px-4'>
-              <h5 className='mb-2 text-xl font-semibold'>
+              <h4 className='mb-2 text-xl font-semibold'>
                 {/* .name */}
                 <span className={styles.projectName}>{project.name}</span>{' '}
                 <span className={`${styles.arrow} select-none`}>
                   <HiOutlineArrowUpRight className='inline' />
                 </span>
-              </h5>
+              </h4>
               <p className='text-md min-h-[6rem] pb-4 font-medium text-[#a5b0d4]'>
                 {/* .description */}
                 {project.description}

@@ -16,9 +16,9 @@ export default function ContactMeSection() {
           <h2 className='mb-8 text-2xl font-bold text-indigo-500'>
             <Link href='#contact-me'>Contact Me</Link>
           </h2>
-          <h4 className='mb-24 text-xl font-extrabold text-indigo-50 2xs:text-4xl xl:mb-40'>
+          <h3 className='mb-24 text-xl font-extrabold text-indigo-50 2xs:text-4xl xl:mb-40'>
             Get in Touch
-          </h4>
+          </h3>
 
           <div className='flex w-full justify-center'>
             <div className='max-w-screen-lg'>

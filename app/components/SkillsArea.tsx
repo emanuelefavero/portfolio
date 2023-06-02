@@ -33,9 +33,9 @@ export default function SkillsArea({ skillsData, skillsArea }: Props) {
           width={36}
           height={36}
         />
-        <h5 className='text-md mb-2 font-bold text-slate-900'>
+        <h4 className='text-md mb-2 font-bold text-slate-900'>
           {skillsAreaCapitalized}
-        </h5>
+        </h4>
         <ul className='flex flex-col gap-1 font-semibold text-slate-600/90'>
           {/* SKILLS */}
           {/* Render first 6 skills from skillsData */}
