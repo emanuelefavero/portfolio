@@ -3,14 +3,11 @@
 // @see https://www.npmjs.com/package/next-pwa
 const isProd = process.env.NODE_ENV === 'production'
 const withPWA = require('next-pwa')({
-  pwa: {
-    dest: 'public',
-    register: true,
-    scope: '/',
+  dest: 'public',
+  register: true,
 
-    // Disable the PWA module in development
-    // disable: !isProd,
-  },
+  // Disable the PWA module in development
+  // disable: !isProd,
 })
 
 const nextConfig = {}
