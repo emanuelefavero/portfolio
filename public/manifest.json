@@ -5,6 +5,7 @@
   "name": "Emanuele Favero Portfolio",
   "short_name": "EF Portfolio",
   "description": "Fullstack Developer based in Italy",
+  "start_url": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",
