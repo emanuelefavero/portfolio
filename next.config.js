@@ -8,6 +8,8 @@ const withPWA = require('next-pwa')({
 
   // Disable the PWA module in development
   // disable: !isProd,
+
+  // BEWARE: Lighthouse warning - "Does not register a service worker that controls page and start_url" will remain for now until Next.js app router support it
 })
 
 const nextConfig = {}
