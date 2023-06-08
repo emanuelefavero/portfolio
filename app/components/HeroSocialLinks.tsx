@@ -7,7 +7,7 @@ import { BsTelegram } from 'react-icons/bs'
 export default function HeroSocialLinks() {
   return (
     <>
-      <div className='flex select-none items-center justify-start'>
+      <div className='mb-10 flex select-none items-center justify-start md:mb-20'>
         <Link href='mailto:info@emanuelefavero.com' target='_blank'>
           <MdEmail
             className='mr-5 transform text-2xl text-slate-600 transition-all duration-200 hover:rotate-12 hover:scale-125 hover:text-indigo-600 active:scale-110 active:text-indigo-600'
