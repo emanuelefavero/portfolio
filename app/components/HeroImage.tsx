@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import HeroInfo from './HeroInfo'
-import heroImage from '@/public/images/hero-image.png'
+import heroImage from '@/public/images/hero-image.webp'
 import heroBlob from '@/public/images/hero-blob.svg'
 
 interface Props {
