@@ -8,7 +8,7 @@ export default function HeaderLogo() {
     <ScrollLink
       to='home'
       smooth={true}
-      offset={-10}
+      offset={-70}
       className={`${styles.HeaderLogo} flex cursor-pointer items-center justify-center rounded-lg px-2 py-1 text-lg font-bold text-slate-900 3xs:text-xl`}
     >
       <Image
