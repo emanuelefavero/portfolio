@@ -3,7 +3,9 @@ import { SiGmail } from 'react-icons/si'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 import { BsTelegram } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 
 // NOTE: I avoided creating a separate component for each card because it would require a more complex code for handling custom colors (and color hover, active states) in tailwind
 
@@ -109,6 +111,27 @@ export default function ContactMeCards() {
               Twitter
             </h4>
             <p className='text-sm font-semibold xs:text-xl'>emanuele_dev</p>
+          </div>
+        </Link>
+
+        {/* WHATSAPP CARD */}
+        <Link
+          className='flex w-max items-center justify-start rounded-2xl border-t-2 border-indigo-50/10 bg-[#24d367]/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#24d367]/25 active:scale-[0.985] active:bg-[#24d367]/20 active:text-indigo-400 2xs:w-full xs:w-[22.18rem]'
+          href='https://wa.me/393401413175'
+          target='_blank'
+        >
+          <BsWhatsapp
+            className='select-none text-4xl 2xs:mr-5'
+            aria-label='WhatsApp'
+            title='WhatsApp'
+          />
+          <div className='hidden 2xs:block'>
+            <h4 className='mb-1 font-medium uppercase text-[#a5b0d4]/80'>
+              WhatsApp
+            </h4>
+            <p className='text-sm font-semibold xs:text-xl'>
+              wa.me/39340****175
+            </p>
           </div>
         </Link>
       </div>
