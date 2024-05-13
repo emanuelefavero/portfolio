@@ -1,13 +1,16 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import prismaLogo from '@/public/images/prisma-logo.svg'
 
 export default function Footer() {
   // TODO: Fix flex responsive on small screens
 
   return (
     <>
-      <div className='flex w-full flex-col justify-center gap-2 px-4 pb-20 pt-2 font-medium text-slate-700 2xs:px-10 xs:flex-row xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'>
+      <div className='flex w-full flex-col justify-center gap-2 px-4 pb-20 pt-2 font-medium text-slate-700 2xs:px-10 xs:px-20 sm:flex-row sm:px-28 md:px-20 lg:px-28 xl:px-40'>
         <span className='select-none tracking-widest'>
-          © {new Date().getFullYear()} •{' '}
+          © {new Date().getFullYear()}{' '}
+          <span className='hidden sm:inline'>•</span>
         </span>
         <Link
           href='https://github.com/emanuelefavero'
@@ -17,6 +20,25 @@ export default function Footer() {
           <span className='mr-1'>Emanuele</span>
           <span>Favero</span>
         </Link>
+
+        <span>
+          <span className='mr-2 select-none'>
+            <span className='mr-2 hidden sm:inline'>•</span>Partnered with:
+          </span>
+          <Link
+            href='https://www.prisma.io/?via=emanuelefavero'
+            target='_blank'
+            className='inline-block bg-opacity-30 transition-all duration-150 hover:scale-105 active:scale-95'
+          >
+            <Image
+              className='inline'
+              src={prismaLogo}
+              alt='Prisma Logo'
+              width={64}
+              height={64}
+            />
+          </Link>
+        </span>
       </div>
     </>
   )
