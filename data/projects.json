@@ -41,20 +41,20 @@
       "technologies": ["Firebase", "OAuth", "React Router", "Leaflet"]
     },
     {
+      "name": "Shadcn/ui Dashboard",
+      "description": "A dashboard built with Next.js, Shadcn/ui components and Chart.js",
+      "image": "/images/projects/shadcn-ui-dashboard.webp",
+      "websiteURL": "https://shadcn-ui-dashboard.vercel.app/",
+      "repositoryURL": "https://github.com/emanuelefavero/shadcn-ui",
+      "technologies": ["Next.js", "React", "Shadcn/ui", "Chart.js"]
+    },
+    {
       "name": "Consulting Firm",
       "description": "A nice looking static website for a consulting firm built with TailwindCSS",
       "image": "/images/projects/consulting-firm.webp",
       "websiteURL": "https://emanuelefavero.github.io/tailwind-consulting-website",
       "repositoryURL": "https://github.com/emanuelefavero/tailwind-consulting-website",
       "technologies": ["TailwindCSS", "CSS", "HTML", "Static"]
-    },
-    {
-      "name": "Debugging Duck",
-      "description": "A cute debugging duck that helps you with coding, built for both mobile and desktop",
-      "image": "/images/projects/debugging-duck.webp",
-      "websiteURL": "https://github.com/emanuelefavero/debugging-duck-mobile",
-      "repositoryURL": "https://github.com/emanuelefavero/debugging-duck",
-      "technologies": ["React Native", "Electron", "iOS", "Android", "Desktop"]
     },
     {
       "name": "Weather API",
