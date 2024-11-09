@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "name": "Edil 2 Esse",
+      "description": "A website for an italian construction company built with Next.js, Resend and Radix UI",
+      "image": "/images/projects/edil-2-esse.webp",
+      "websiteURL": "https://www.edil2esse.it",
+      "repositoryURL": "https://github.com/emanuelefavero/edil-2-esse",
+      "technologies": ["Next.js", "Resend", "Radix UI", "TailwindCSS"]
+    },
+    {
       "name": "Pineapple Ecommerce",
       "description": "An iPhone ecommerce built with Next.js, Sanity and Stripe",
       "image": "/images/projects/pineapple-ecommerce.webp",
@@ -47,14 +55,6 @@
       "websiteURL": "https://shadcn-ui-dashboard.vercel.app/",
       "repositoryURL": "https://github.com/emanuelefavero/shadcn-ui",
       "technologies": ["Next.js", "React", "Shadcn/ui", "Chart.js"]
-    },
-    {
-      "name": "Consulting Firm",
-      "description": "A nice looking static website for a consulting firm built with TailwindCSS",
-      "image": "/images/projects/consulting-firm.webp",
-      "websiteURL": "https://emanuelefavero.github.io/tailwind-consulting-website",
-      "repositoryURL": "https://github.com/emanuelefavero/tailwind-consulting-website",
-      "technologies": ["TailwindCSS", "CSS", "HTML", "Static"]
     },
     {
       "name": "Weather API",
