@@ -25,12 +25,12 @@
       "technologies": ["Chart.js", "Balldontlie API", "Next.js", "Typescript"]
     },
     {
-      "name": "Facebook Clone",
-      "description": "A Facebook clone built with the MERN stack. Login: john, password: 1234",
-      "image": "/images/projects/facebook-clone.webp",
-      "websiteURL": "https://facebook-mern.onrender.com",
-      "repositoryURL": "https://github.com/emanuelefavero/facebook-mern",
-      "technologies": ["MERN", "MongoDB", "Express", "React", "Node.js"]
+      "name": "Non Solo Poesia",
+      "description": "A rich text blog built with Next.js, TipTap and PostgreSQL",
+      "image": "/images/projects/non-solo-poesia.webp",
+      "websiteURL": "https://www.nonsolopoesia.it",
+      "repositoryURL": "https://github.com/emanuelefavero/non-solo-poesia",
+      "technologies": ["Next.js", "TipTap", "PostgreSQL", "Clerk", "Neon DB"]
     },
     {
       "name": "MERN Blog",
