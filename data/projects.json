@@ -30,7 +30,7 @@
       "image": "/images/projects/non-solo-poesia.webp",
       "websiteURL": "https://www.nonsolopoesia.it",
       "repositoryURL": "https://github.com/emanuelefavero/non-solo-poesia",
-      "technologies": ["Next.js", "TipTap", "PostgreSQL", "Clerk", "Neon DB"]
+      "technologies": ["Next.js", "TipTap", "PostgreSQL", "Clerk"]
     },
     {
       "name": "MERN Blog",
