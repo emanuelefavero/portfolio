@@ -12,7 +12,7 @@
       "name": "Pineapple Ecommerce",
       "description": "An iPhone ecommerce built with Next.js, Sanity and Stripe",
       "image": "/images/projects/pineapple-ecommerce.webp",
-      "websiteURL": "https://pineapple-ecommerce.vercel.app",
+      "websiteURL": "https://www.pineapplephones.com",
       "repositoryURL": "https://github.com/emanuelefavero/pineapple-ecommerce",
       "technologies": ["Next.js", "Sanity", "Stripe", "React", "Typescript"]
     },
@@ -20,7 +20,7 @@
       "name": "Compare NBA Players",
       "description": "A Next.js app that compares NBA players 1v1 with Chart.js and NBA API",
       "image": "/images/projects/compare-NBA-players.webp",
-      "websiteURL": "https://compare-nba-players.vercel.app",
+      "websiteURL": "https://www.comparenbaplayers.com",
       "repositoryURL": "https://github.com/emanuelefavero/compare-nba-players",
       "technologies": ["Chart.js", "Balldontlie API", "Next.js", "Typescript"]
     },
