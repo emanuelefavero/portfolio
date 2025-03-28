@@ -6,7 +6,7 @@ import styles from './FadeIntoView.module.scss'
 function FadeIntoView({ children }: { children: React.ReactNode }) {
   const [isVisible, setVisible] = useState(true)
   const [alreadyViewed, setAlreadyViewed] = useState(false)
-  const domRef = useRef() as React.MutableRefObject<HTMLInputElement>
+  const domRef = useRef(undefined) as React.MutableRefObject<HTMLInputElement>
 
   useEffect(() => {
     const currentDomRef = domRef.current

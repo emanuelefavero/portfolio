@@ -3,23 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "20.1.7",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
-    "next": "13.4.2",
+    "next": "15.2.4",
     "next-pwa": "^5.6.0",
     "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
     "sass": "^1.62.1",
@@ -28,6 +27,11 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.7",
+    "eslint-config-next": "15.2.4",
     "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "overrides": {
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4"
   }
 }
