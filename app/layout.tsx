@@ -4,12 +4,16 @@ import ScrollIndicator from './components/ScrollIndicator'
 import PageNavigation from './components/PageNavigation'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import type { Viewport } from 'next'
 
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 // * --- METADATA ---
+export const viewport: Viewport = {
+  themeColor: '#4338ca',
+}
 export const metadata = {
   title: 'Emanuele Favero Portfolio',
   description:
@@ -46,20 +50,10 @@ export const metadata = {
     apple: '/icon-192x192.png',
   },
 
-  // themeColor
-  themeColor: '#4338ca',
-
   // manifest
   manifest: `${server}/manifest.json`,
 
   // TODO: Twitter
-
-  // viewport
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    // maximumScale: 1,
-  },
 
   // more metadata options
   // @see https://nextjs.org/docs/app/api-reference/functions/generate-metadata

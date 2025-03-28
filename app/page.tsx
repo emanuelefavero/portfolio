@@ -4,7 +4,9 @@ import SkillsSection from './components/SkillsSection'
 import ContactMeSection from './components/ContactMeSection'
 
 async function getNumberOfRepositories() {
-  const res = await fetch('https://api.github.com/users/emanuelefavero')
+  const res = await fetch('https://api.github.com/users/emanuelefavero', {
+    cache: 'force-cache',
+  })
   const data = await res.json()
 
   if (!data.public_repos) {
