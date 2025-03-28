@@ -1,6 +1,6 @@
 import styles from './HeaderMenuItems.module.scss'
 import { Link as ScrollLink } from 'react-scroll'
-import useActiveSection from '@/app/hooks/useActiveSection'
+import useActiveSection from '@/hooks/useActiveSection'
 
 // BEWARE: the react-scroll library raises a warning in Lighthouse - "Links are not crawlable"
 

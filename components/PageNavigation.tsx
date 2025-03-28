@@ -1,7 +1,7 @@
 'use client'
 
 import { Link as ScrollLink } from 'react-scroll'
-import useActiveSection from '@/app/hooks/useActiveSection'
+import useActiveSection from '@/hooks/useActiveSection'
 import ScrollDownButton from './ScrollDownButton'
 import ScrollToTopButton from './ScrollToTopButton'
 

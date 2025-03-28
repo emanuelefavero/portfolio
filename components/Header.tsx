@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import HeaderLogo from './HeaderLogo'
 import HeaderMenu from './HeaderMenu'
-import useScrollDistance from '@/app/hooks/useScrollDistance'
+import useScrollDistance from '@/hooks/useScrollDistance'
 
 export default function Header() {
   const scrollDistance = useScrollDistance()
@@ -41,9 +41,9 @@ export default function Header() {
         scrollDistance < 50
           ? 'translate-y-0'
           : // Hide - Show Header on scroll down - up
-          isHeaderHidden
-          ? '-translate-y-full'
-          : 'translate-y-0'
+            isHeaderHidden
+            ? '-translate-y-full'
+            : 'translate-y-0'
       } fixed z-50 flex w-full items-center justify-center bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200`}
     >
       {/* MAX WIDTH */}

@@ -2,7 +2,7 @@
 
 import styles from './ScrollDownButton.module.scss'
 import { HiArrowDown } from 'react-icons/hi'
-import useScrollDistance from '@/app/hooks/useScrollDistance'
+import useScrollDistance from '@/hooks/useScrollDistance'
 import { Link as ScrollLink } from 'react-scroll'
 
 export default function ScrollDownButton() {

@@ -1,6 +1,6 @@
 'use client'
 
-import styles from '@/app/styles/animations.module.scss'
+import styles from '@/styles/animations.module.scss'
 import HamburgerMenuButton from './HamburgerMenuButton'
 import HeaderMenuItems from './HeaderMenuItems'
 import { useState } from 'react'
