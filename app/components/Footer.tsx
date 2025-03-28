@@ -35,7 +35,8 @@ export default function Footer() {
               src={prismaLogo}
               alt='Prisma Logo'
               width={64}
-              height={64}
+              height={24}
+              style={{ width: '64px', height: '24px' }}
             />
           </Link>
         </span>
