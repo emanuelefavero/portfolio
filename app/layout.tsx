@@ -1,9 +1,9 @@
 import './globals.css'
 import { server } from '@/config/server'
-import ScrollIndicator from '../components/ScrollIndicator'
-import PageNavigation from '../components/PageNavigation'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import ScrollIndicator from '@/components/ScrollIndicator'
+import PageNavigation from '@/components/PageNavigation'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import type { Viewport } from 'next'
 
 import { Inter } from 'next/font/google'
