@@ -12,7 +12,7 @@ export default function HeroText() {
         </span>{' '}
         Developer
       </h1>
-      <p className='mb-8 max-w-screen-3xs text-sm font-semibold leading-normal text-slate-600/90 2xs:text-xl xs:max-w-screen-2xs sm:max-w-md'>
+      <p className='mb-8 max-w-(--breakpoint-3xs) text-sm font-semibold leading-normal text-slate-600/90 2xs:text-xl xs:max-w-(--breakpoint-2xs) sm:max-w-md'>
         Based in Italy • I&apos;m passionate about coding immersive UX/UI
         experiences for the web
       </p>

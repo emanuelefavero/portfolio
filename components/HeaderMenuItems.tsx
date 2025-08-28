@@ -38,7 +38,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
               : styles.linkHoverLineAnimation
           } ${
             activeSection === 'projects' && styles.activeLink
-          } relative cursor-pointer rounded-sm active:text-slate-600`}
+          } relative cursor-pointer rounded-xs active:text-slate-600`}
           onClick={() =>
             setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
           }
@@ -59,7 +59,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
               : styles.linkHoverLineAnimation
           } ${
             activeSection === 'skills' && styles.activeLink
-          } relative cursor-pointer rounded-sm active:text-slate-600`}
+          } relative cursor-pointer rounded-xs active:text-slate-600`}
           onClick={() =>
             setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
           }
@@ -71,7 +71,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
       {/* Download CV */}
       <li className='mr-6'>
         <button
-          className={`${styles.linkHoverLineAnimation} relative cursor-pointer rounded-sm active:text-slate-600`}
+          className={`${styles.linkHoverLineAnimation} relative cursor-pointer rounded-xs active:text-slate-600`}
           onClick={handleDownloadCV}
         >
           Download CV
@@ -84,7 +84,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
           to='contact-me'
           smooth={true}
           offset={110}
-          className='relative transform cursor-pointer rounded-full border-b border-slate-300 bg-slate-50 px-4 py-2 shadow-sm shadow-slate-400 transition-all duration-100 hover:bg-slate-100 hover:text-slate-600 active:top-[1px] active:shadow-none'
+          className='relative transform cursor-pointer rounded-full border-b border-slate-300 bg-slate-50 px-4 py-2 shadow-xs shadow-slate-400 transition-all duration-100 hover:bg-slate-100 hover:text-slate-600 active:top-px active:shadow-none'
           onClick={() =>
             setIsHamburgerMenuOpen && setIsHamburgerMenuOpen(false)
           }
@@ -92,7 +92,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
           <span
             className={`${
               activeSection === 'contact-me' && styles.activeLink
-            } bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent`}
+            } bg-linear-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent`}
           >
             Contact Me
           </span>

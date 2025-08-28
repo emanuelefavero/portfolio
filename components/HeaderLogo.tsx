@@ -12,7 +12,7 @@ export default function HeaderLogo() {
       className={`${styles.HeaderLogo} flex cursor-pointer items-center justify-center rounded-lg px-2 py-1 text-lg font-bold text-slate-900 3xs:text-xl`}
     >
       <Image
-        className='mr-4 hidden select-none rounded-full border-2 border-slate-100 shadow-sm shadow-slate-400 3xs:block'
+        className='mr-4 hidden select-none rounded-full border-2 border-slate-100 shadow-xs shadow-slate-400 3xs:block'
         src={logoImage}
         alt='logo'
         width={44}

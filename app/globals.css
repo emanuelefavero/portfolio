@@ -1,116 +1,152 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-/* DEFAULT STYLING */
-:root {
-  --color-primary: #4f46e5;
-  --color-selection: rgba(77, 69, 230, 0.2);
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-4xs: 160px;
+  --breakpoint-3xs: 240px;
+  --breakpoint-2xs: 320px;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
 
-  /* Font rendering, smoothing, adjusting */
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
 }
 
-::selection {
-  background-color: var(--color-selection);
-  /* color: #fff; */
-}
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: inherit;
-}
-
-/* TIP: :focus-visible instead of :focus shows the outline only when pressing TAB on the keyboard (it keeps the default behavior) */
-:focus-visible {
-  outline: 2px solid var(--color-primary);
-}
-
-/* THEME */
-/* html {
-  color-scheme: dark light;
-} */
-
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'SF Pro',
-    'San Francisco Pro', 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', sans-serif;
-
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-  /* text-align: center; */
-
-  scroll-behavior: smooth;
-
-  /* overflow: hidden; */
-  overflow-x: hidden;
-}
-
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-textarea,
-button,
-select,
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  text-decoration: none;
-  /* outline: none; */
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-section {
-  min-height: calc(100vh);
-}
-
-section.dark {
-  /* background-color: #0a172a; */
-  background-color: #101343;
-  /* background-color: #0f172a; */
-  /* background-color: hsl(238, 47%, 20%); */
-
-  box-shadow: 0 0 3px 5px rgba(16, 19, 67, 0.25);
-
-  color: #eef2ff;
-  transform: skew(0deg, -6deg);
-}
-
-section.dark > * {
-  transform: skew(0deg, 6deg);
-}
-
-#projects,
-#skills,
-#contact-me {
-  scroll-behavior: smooth;
-}
-
-/* DARK MODE */
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
-} */
+
+  /* DEFAULT STYLING */
+  :root {
+    --color-primary: #4f46e5;
+    --color-selection: rgba(77, 69, 230, 0.2);
+  
+    /* Font rendering, smoothing, adjusting */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  ::selection {
+    background-color: var(--color-selection);
+    /* color: #fff; */
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+  /* TIP: :focus-visible instead of :focus shows the outline only when pressing TAB on the keyboard (it keeps the default behavior) */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+  }
+  
+  /* THEME */
+  /* html {
+    color-scheme: dark light;
+  } */
+  
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'SF Pro',
+      'San Francisco Pro', 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* text-align: center; */
+  
+    scroll-behavior: smooth;
+  
+    /* overflow: hidden; */
+    overflow-x: hidden;
+  }
+  
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  textarea,
+  button,
+  select,
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    /* outline: none; */
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  section {
+    min-height: calc(100vh);
+  }
+  
+  section.dark {
+    /* background-color: #0a172a; */
+    background-color: #101343;
+    /* background-color: #0f172a; */
+    /* background-color: hsl(238, 47%, 20%); */
+  
+    box-shadow: 0 0 3px 5px rgba(16, 19, 67, 0.25);
+  
+    color: #eef2ff;
+    transform: skew(0deg, -6deg);
+  }
+  
+  section.dark > * {
+    transform: skew(0deg, 6deg);
+  }
+  
+  #projects,
+  #skills,
+  #contact-me {
+    scroll-behavior: smooth;
+  }
+  
+  /* DARK MODE */
+  /* @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+  } */
+}

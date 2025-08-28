@@ -8,7 +8,7 @@ type Props = {
 export default function QRCode({ src, alt }: Props) {
   return (
     <>
-      <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-sm shadow-[#0d0f35]'>
+      <div className='rounded-xl border-b border-[#242b87] bg-[#1d226f] shadow-xs shadow-[#0d0f35]'>
         <Image
           src={src}
           alt={alt}

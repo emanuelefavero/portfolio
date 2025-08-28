@@ -11,7 +11,7 @@ export default function ContactMeSection() {
         id='contact-me'
         className='dark relative -top-28 flex w-full flex-col items-center justify-center border-y-4 border-indigo-800 text-indigo-50'
       >
-        <div className='w-full max-w-screen-3xl items-center justify-center px-4 pb-44 pt-48 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'>
+        <div className='w-full max-w-(--breakpoint-3xl) items-center justify-center px-4 pb-44 pt-48 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'>
           {/* TEXT */}
           <h2 className='mb-8 text-2xl font-bold text-indigo-500'>
             <Link href='#contact-me'>Contact Me</Link>
@@ -21,7 +21,7 @@ export default function ContactMeSection() {
           </h3>
 
           <div className='flex w-full justify-center'>
-            <div className='max-w-screen-lg'>
+            <div className='max-w-(--breakpoint-lg)'>
               {/* CONTACT ME CARDS */}
               <ContactMeCards />
 

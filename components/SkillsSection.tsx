@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       {/* SKILLS SECTION */}
       <section
         id='skills'
-        className='relative -top-16 flex w-full max-w-screen-3xl flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'
+        className='relative -top-16 flex w-full max-w-(--breakpoint-3xl) flex-col items-start justify-start px-4 pb-44 pt-32 text-slate-500 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'
       >
         {/* TEXT */}
         <h2 className='mb-8 text-lg font-bold text-indigo-600'>
@@ -37,7 +37,7 @@ export default function ProjectsSection() {
 
         {/* SKILLS LIST */}
         <div className='flex w-full justify-center'>
-          <ul className='flex w-full max-w-screen-lg flex-wrap justify-between gap-10'>
+          <ul className='flex w-full max-w-(--breakpoint-lg) flex-wrap justify-between gap-10'>
             {/* SKILLS AREAS */}
             <SkillsArea skillsData={skillsData} skillsArea='frontend' />
             <SkillsArea skillsData={skillsData} skillsArea='backend' />

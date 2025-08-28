@@ -47,7 +47,7 @@ export default function Header() {
       } fixed z-50 flex w-full items-center justify-center bg-slate-200/75 px-2 py-3 backdrop-blur-lg backdrop-filter transition-all duration-200`}
     >
       {/* MAX WIDTH */}
-      <div className='flex w-full max-w-screen-3xl flex-col-reverse items-start justify-between 4xs:flex-row 4xs:items-center'>
+      <div className='flex w-full max-w-(--breakpoint-3xl) flex-col-reverse items-start justify-between 4xs:flex-row 4xs:items-center'>
         <HeaderLogo />
         <HeaderMenu />
       </div>

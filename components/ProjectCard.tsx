@@ -19,7 +19,7 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <>
-      <div className='h-full w-full flex-1 overflow-hidden rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-sm shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98] 2xs:w-80'>
+      <div className='h-full w-full flex-1 overflow-hidden rounded-3xl border border-[#0a0c29] bg-[#171b56] shadow-xs shadow-[#0a0c29] transition-all duration-200 hover:scale-[1.02] hover:bg-[#1b2061] active:scale-[0.98] 2xs:w-80'>
         {/* WEBSITE URL LINK */}
         <div className={styles.websiteURL}>
           <Link
@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: Props) {
                   <HiOutlineArrowUpRight className='inline' />
                 </span>
               </h4>
-              <p className='text-md min-h-[6rem] pb-4 font-medium text-[#a5b0d4]'>
+              <p className='text-md min-h-24 pb-4 font-medium text-[#a5b0d4]'>
                 {/* .description */}
                 {project.description}
               </p>
@@ -69,7 +69,7 @@ export default function ProjectCard({ project }: Props) {
                 <span className={styles.exploreCode}>Explore Code</span>
               </div>
             </div>
-            <div className='flex flex-wrap gap-x-3 gap-y-3 px-4 pb-[1rem]'>
+            <div className='flex flex-wrap gap-x-3 gap-y-3 px-4 pb-4'>
               {/* .technologies */}
               {project.technologies.map((technology, index) => (
                 <div key={index}>

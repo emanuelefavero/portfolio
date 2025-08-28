@@ -11,7 +11,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 export default function ContactMeCards() {
   return (
     <>
-      <div className='mb-20 flex w-full max-w-screen-xl flex-row flex-wrap items-start justify-start gap-8'>
+      <div className='mb-20 flex w-full max-w-(--breakpoint-xl) flex-row flex-wrap items-start justify-start gap-8'>
         {/* GMAIL CARD */}
         <Link
           className='flex w-max items-center justify-start rounded-2xl border-t-2 border-indigo-50/10 bg-[#DE4033]/20 px-4 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#DE4033]/25 active:scale-[0.985] active:bg-[#DE4033]/20 active:text-indigo-400 2xs:w-full xs:w-[22.18rem]'
@@ -56,7 +56,7 @@ export default function ContactMeCards() {
 
         {/* GITHUB CARD */}
         <Link
-          className='flex w-max items-center justify-start rounded-2xl border-t-2 border-indigo-50/10 bg-[#000]/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-[#000]/25 active:scale-[0.985] active:bg-[#000]/20 active:text-indigo-400 2xs:w-full xs:w-[22.18rem]'
+          className='flex w-max items-center justify-start rounded-2xl border-t-2 border-indigo-50/10 bg-black/20 px-5 py-2 text-indigo-50 shadow-md shadow-black/30 transition-all duration-150 hover:scale-[1.015] hover:bg-black/25 active:scale-[0.985] active:bg-black/20 active:text-indigo-400 2xs:w-full xs:w-[22.18rem]'
           href='https://github.com/emanuelefavero'
           target='_blank'
         >
