@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className='select-none tracking-widest'>
           © {new Date().getFullYear()}{' '}
-          <span className='hidden sm:inline'>•</span>
+          <span className='hidden sm:inline' role='presentation'>•</span>
         </div>
 
         {/* GitHub Link */}
@@ -22,10 +22,15 @@ export default function Footer() {
           <span>Favero</span>
         </Link>
 
+        {/* Partita IVA */}
+        <div className='tracking-widest'>
+          <span className='select-none mr-2 hidden sm:inline' role='presentation'>•</span>P.IVA: 02079960494
+        </div>
+
         {/* Partnered with */}
         <div className='flex flex-wrap'>
           <div className='mr-2 select-none'>
-            <span className='mr-2 hidden sm:inline'>•</span>Partnered with:
+            <span className='mr-2 hidden sm:inline' role='presentation'>•</span>Partnered with:
           </div>
           <Link
             href='https://www.prisma.io/?via=emanuelefavero'
