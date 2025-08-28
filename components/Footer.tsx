@@ -4,21 +4,25 @@ import prismaLogo from '@/public/images/prisma-logo.svg'
 
 export default function Footer() {
   return (
-    <>
-      <div className='flex w-full flex-col justify-center gap-2 px-4 pb-20 pt-2 font-medium text-slate-700 2xs:px-10 xs:px-20 sm:flex-row sm:px-28 md:px-20 lg:px-28 xl:px-40'>
+    <div className='flex justify-center items-center w-full 2xs:px-10 xs:px-20 sm:px-28 md:px-20 lg:px-28 xl:px-40'>
+      <div className='flex flex-wrap gap-2 px-4 pb-20 pt-2 font-medium text-slate-700'>
+        {/* Copyright */}
         <div className='select-none tracking-widest'>
           © {new Date().getFullYear()}{' '}
           <span className='hidden sm:inline'>•</span>
         </div>
+
+        {/* GitHub Link */}
         <Link
           href='https://github.com/emanuelefavero'
           target='_blank'
-          className='flex flex-col text-sm tracking-widest text-indigo-600 transition-all duration-150 hover:border-b-2 hover:border-indigo-600 hover:text-indigo-700 4xs:text-base 3xs:flex-row'
+          className='flex flex-wrap text-sm tracking-widest text-indigo-600 transition-all duration-150 hover:border-b-2 hover:border-indigo-600 hover:text-indigo-700 4xs:text-base'
         >
           <span className='mr-1'>Emanuele</span>
           <span>Favero</span>
         </Link>
 
+        {/* Partnered with */}
         <div className='flex flex-wrap'>
           <div className='mr-2 select-none'>
             <span className='mr-2 hidden sm:inline'>•</span>Partnered with:
@@ -39,6 +43,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   )
 }
