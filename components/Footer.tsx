@@ -3,15 +3,14 @@ import Image from 'next/image'
 import prismaLogo from '@/public/images/prisma-logo.svg'
 
 export default function Footer() {
-  // TODO: Fix flex responsive on small screens
 
   return (
     <>
       <div className='flex w-full flex-col justify-center gap-2 px-4 pb-20 pt-2 font-medium text-slate-700 2xs:px-10 xs:px-20 sm:flex-row sm:px-28 md:px-20 lg:px-28 xl:px-40'>
-        <span className='select-none tracking-widest'>
+        <div className='select-none tracking-widest'>
           © {new Date().getFullYear()}{' '}
           <span className='hidden sm:inline'>•</span>
-        </span>
+        </div>
         <Link
           href='https://github.com/emanuelefavero'
           target='_blank'
@@ -21,10 +20,10 @@ export default function Footer() {
           <span>Favero</span>
         </Link>
 
-        <span>
-          <span className='mr-2 select-none'>
+        <div className='flex flex-wrap'>
+          <div className='mr-2 select-none'>
             <span className='mr-2 hidden sm:inline'>•</span>Partnered with:
-          </span>
+          </div>
           <Link
             href='https://www.prisma.io/?via=emanuelefavero'
             target='_blank'
@@ -39,7 +38,7 @@ export default function Footer() {
               style={{ width: '64px', height: '24px' }}
             />
           </Link>
-        </span>
+        </div>
       </div>
     </>
   )
