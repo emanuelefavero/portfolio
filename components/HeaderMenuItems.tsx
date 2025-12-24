@@ -12,7 +12,7 @@ export default function HeaderMenuItems({ setIsHamburgerMenuOpen }: Props) {
   const activeSection = useActiveSection()
 
   const handleDownloadCV = () => {
-    const fileUrl = '/emanuele-favero-CV.pdf'
+    const fileUrl = '/Emanuele_Favero_Frontend_Developer.pdf'
     const newWindow = window.open(fileUrl, '_blank')
     if (newWindow) {
       // Security code - Prevent new window from accessing the current window methods and properties
